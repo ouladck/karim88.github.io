@@ -5,9 +5,25 @@
     <description>This is my stupid profile, Just have fun (^_^).</description>
     <link>http://karim88.github.io/</link>
     <atom:link href="http://karim88.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Jul 2014 14:24:44 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Jul 2014 14:24:44 +0000</lastBuildDate>
+    <pubDate>Tue, 01 Jul 2014 23:24:57 +0000</pubDate>
+    <lastBuildDate>Tue, 01 Jul 2014 23:24:57 +0000</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>لقطة لسطح مكتبي</title>
+        <description>&lt;p&gt;السلام عليكم هذه بعض صور سطح مكتبي&lt;br /&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-8kybFky_MDw/U5trNqlqo8I/AAAAAAAAAvU/wpHhHmTa244/w816-h612-no/%25D9%2584%25D9%2582%25D8%25B7%25D8%25A9+%25D8%25A7%25D9%2584%25D8%25B4%25D8%25A7%25D8%25B4%25D8%25A9+-+13+%25D9%258A%25D9%2588%25D9%2586%252C+2014+-+WEST+10%253A18%253A00+.png&quot; alt=&quot;screen&quot; /&gt;  &lt;br /&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/E8wpHiF-_HN_AlxmS8itQkKDgx2VTtN3QC8uVx_TE0k=w816-h612-no&quot; alt=&quot;screen1&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/fNEOboLomOkrXyxRH1_lUS8oAF9XMSkgOrBSJUODjv0=w816-h612-no&quot; alt=&quot;screen2&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jul 2014 22:41:01 +0000</pubDate>
+        <link>http://karim88.github.io/news/2014/07/01/My-desktop-screen/</link>
+        <guid isPermaLink="true">http://karim88.github.io/news/2014/07/01/My-desktop-screen/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -38,9 +54,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
     
       <item>
         <title>Welcome to my profile</title>
-        <description>&lt;h2 id=&quot;welcome&quot;&gt;Welcome&lt;/h2&gt;
-
-&lt;p&gt;Hello &lt;code&gt;World&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;p&gt;I feel a little &lt;code&gt;Lazy&lt;/code&gt; today, and I don’t know why?&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Jun 2014 01:50:41 +0000</pubDate>
         <link>http://karim88.github.io/news/2014/06/30/Welcome-to-my-profile/</link>
