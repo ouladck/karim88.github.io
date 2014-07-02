@@ -5,9 +5,29 @@
     <description>This is my stupid profile, Just have fun (^_^).</description>
     <link>http://karim88.github.io/</link>
     <atom:link href="http://karim88.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Jul 2014 23:24:57 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Jul 2014 23:24:57 +0000</lastBuildDate>
+    <pubDate>Wed, 02 Jul 2014 15:26:32 +0000</pubDate>
+    <lastBuildDate>Wed, 02 Jul 2014 15:26:32 +0000</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>PlankSetting</title>
+        <description>&lt;p&gt;This is a simple application that allow users to customize plank dock easily, Features:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Customizing the behavior of the dock.  
+Changing the dock theme.  
+Adding new themes.  
+Removing the undesirable themes.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-V3fUNDbWB7A/U52KrfzLxvI/AAAAAAAAAwQ/tZ_XfqD9ous/w800-h500-no/plank_themes_tab.png&quot; alt=&quot;img1&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-nCywzSxo6jo/U52KA6YQxxI/AAAAAAAAAwE/0mvMpHce7yQ/w800-h500-no/plank_general_tab.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 02 Jul 2014 13:49:02 +0000</pubDate>
+        <link>http://karim88.github.io/2014/07/02/PlankSetting/</link>
+        <guid isPermaLink="true">http://karim88.github.io/2014/07/02/PlankSetting/</guid>
+        
+        
+      </item>
     
       <item>
         <title>لقطة لسطح مكتبي</title>
