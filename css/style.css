@@ -1,176 +1,153 @@
-html, body{
-	color: #c60f13;
-	background-color: #e9e9e9;
+body, html{
+	height: 100%;
+	color: #fff;
 	font-size: 20px;
-	padding-top: 50px;
+	font-weight: bold;
 }
 
-footer{
-	color: #e9e9e9;
-	background-color: #c60f13;
-	bottom: 0px;
-	position: relative;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	height: 50px;
+/* Parralex animation */
+.fixed{
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
-.top-bar{
-	color: #e9e9e9;
-	background-color: #c60f13;
-	height: 50px;
-}
-.top-bar a, [data-aside] a{
-	color: #fff;
-}
-.input-search{
-	padding-top: 0px;
-	margin: 0px;
+.bg-1{
+	background-image: url('../img/desktop.png');
 }
 
-.resize{
-	width: 200px;
-	height: 50px;
-	margin-right: 5px;
+.bg-2{
+	background-image: url('../img/desktop-1.png');
+	height: 800px;
 }
 
-.center{
-	text-align: center;
+
+/* End of Parallax animation */
+
+.scroll{
+	min-height: 100%;
 }
 
-.posts{
-	margin-right: 20px;
+.green{
+	min-height: 50%;
+	max-height: 200%;
+	height: 60%;
+}
+.blue{
+	max-height: 250%;
+	height: 1300px;
 }
 
-[data-aside]{
-	padding-left: 20px;
-	padding-top: 5px;
-	background-color: #c60f13;
-	height: 50px;
-	width: 100%;
-	color: #e9e9e9;
-	position: absolute;
-	top: -100px;
-}
-
-[data-ng-view]{
-	padding-left: 20px;
-}
-
-.posts-list:hover{
-	-webkit-transform: rotate(1deg);
-	      -moz-transform: rotate(1deg);
-	         -ms-transform: rotate(1deg);
-	             -o-transform: rotate(1deg);
-	                   transform: rotate(1deg);
-}
-
-.backimg{
-	background: url('../media/images/cover.jpg');
-}
-
-.backimg h1, .contactimg h1{
-	background-color: rgba(0, 0, 0, .5);
-	color: #fff;
-	bottom: 0px;
-	width: 100%;
-	padding: 20px;
+.container{
+	padding-top: 30px;
 	position: absolute;
 	text-align: center;
+	width: 100%;
 }
 
-.backimg h1:hover{
-	background-color: rgb(0, 0, 0);
+.card, .card-title{
+	color: #bbb;
 }
 
-.backimg .close1{
-	margin: 20px;
+.logo{
+	width: 25%;
+	height: 25%;
+}
+footer.page-footer{
+	margin-top: 0;
+	padding-top: O;
 }
 
-.close1{
-	font-size: 20px;
-	background-color: #fff;
+.footer-copyright{
+	padding-left: 20px;
+}
+
+.sn{
+	vertical-align: 9px;
+	font-weight: bolder;
+}
+
+.aboutImg{
+	border: 5px solid rgba(255, 255, 255, .7);
+	border-radius: 100%;
+	margin-left: 10px;
 	text-align: center;
-	padding: 8px;
-	height: 40px;
-	width: 40px;
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
 }
 
-.aboutimg{
-	background: url('../media/images/aboutcover.jpg');
-	padding: 20px;
-}
-
-.contactimg{
-	background: url('../media/images/contactcover.jpg');
-}
-
-.contactimg h1:hover{
-	background-color: rgb(0, 0, 0);
-}
-
-.contactimg .close1{
-	margin: 20px;
-}
-
-.backimg, .aboutimg, .contactimg{
-	background-size: 100% 300px;
-	margin-right: 20px;
-	text-align: center;
-	height: 300px;
-	position: relative;
-	width: 98%;
-}
-
-.me{
-	border-radius: 150px;
-}
-
-.findme{
-	margin-top: 50px;
-}
-
-.fi-social-facebook{
-	color: #084CF2;
-}
-.fi-social-twitter{
-	color: #08D6F2;
-}
-.fi-social-google-plus{
-	color: #F01E19;
-}
-.fi-social-github{
-	color: #000;
-}
-
-.social{
-	text-align: center;
-}
-
-.shadow:hover{
-	box-shadow: 0 0 15px #4C9ED9;
+.aboutImg:hover{
+	border-radius: 2px;
 }
 
 
 /* Media Query for devices */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
-	[data-aside]{
+	.logo{
+		width: 50%;
+		height: 50%;
+	}
+	h1{
+		font-size: 35px;
+	}
+	.bg-2{
+		height: 250%;
+		font-size: 15px;
+	}
+	.bg-2 img{
+		width: 84px;
+		height: 84px;
+	}
+	.bg-2 h3{
+		font-size: 1rem;
+	}
+	.bg-2 .col{
+		margin-top: 15px;
+	}
+	body{
+		font-size: 12px;
+	}
+	.card.small{
 		height: 100px;
 	}
-	.th{
-		width: 156px;
+	.card.small h1{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin: 0rem 0px 0rem;
+	}
+	.mdi-navigation-close{
+		display: none;
+	}
+	.card .card-content .card-title {
+    line-height: 8px;
+	}
+	.card .card-title {
+    font-size: 14px;
+    font-weight: bold;
+	}
+	.green{
+		height: 100%;
+	}
+	.blue{
+		height: 210%;
+	}
+}
+@media only screen
+and (min-device-width : 481px)
+and (max-device-width : 1100px) {
+	
+	body{
+		font-size: 15px;
+	}
+	.green, .blue{
+		height: 1500px;
 	}
 }
 
-@media only screen 
-and (min-device-width : 481px) 
-and (max-device-width : 1100px) {
-	[data-aside]{
-		height: 100px;
-	}
-	.th{
-		width: 256px;
-	}
-}
