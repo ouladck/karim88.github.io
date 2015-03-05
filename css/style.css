@@ -146,8 +146,49 @@ and (max-device-width : 1100px) {
 	body{
 		font-size: 15px;
 	}
-	.green, .blue{
-		height: 1500px;
+	h1{
+		font-size: 35px;
+	}
+	.bg-2{
+		height: 250%;
+		font-size: 15px;
+	}
+	.bg-2 img{
+		width: 84px;
+		height: 84px;
+	}
+	.bg-2 h3{
+		font-size: 1rem;
+	}
+	.bg-2 .col{
+		margin-top: 15px;
+	}
+	body{
+		font-size: 12px;
+	}
+	.card.small{
+		height: 100px;
+	}
+	.card.small h1{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin: 0rem 0px 0rem;
+	}
+	.mdi-navigation-close{
+		display: none;
+	}
+	.card .card-content .card-title {
+    line-height: 8px;
+	}
+	.card .card-title {
+    font-size: 14px;
+    font-weight: bold;
+	}
+	.green{
+		height: 100%;
+	}
+	.blue{
+		height: 210%;
 	}
 }
 
