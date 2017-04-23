@@ -1,0 +1,41 @@
+{
+  "name": "Karimoc.com",
+  "authors": [
+    "karim Oulad Chalha <herr.linux88@gmail.com>"
+  ],
+  "description": "Karim Oulad Chalha portfolio",
+  "main": "index.html",
+  "keywords": [
+    "portfolio",
+    "karimoc",
+    "karim",
+    "dev",
+    "oulad",
+    "chalha",
+    "zayousa",
+    "web",
+    "developor"
+  ],
+  "license": "MIT",
+  "homepage": "karimoc.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.2.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "wow": "wowjs#^1.1.2",
+    "jquery.cslider": "*"
+  },
+  "devDependencies": {
+    "vue": "^2.2.6",
+    "gulp": "^3.9.1",
+    "stylus": "^0.54.5"
+  }
+}
