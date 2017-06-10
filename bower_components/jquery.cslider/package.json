@@ -1,0 +1,25 @@
+{
+  "name": "jquery.cslider",
+  "version": "1.0.0",
+  "description": "A simple parallax content slider with different animations for each slider element and a background parallax effect.",
+
+  "author": "Manoela Ilic <crnacura@gmail.com> (http://tympanus.net/)",
+  "bugs": "https://github.com/delegator/jquery.cslider/issues",
+  "license": "custom",
+  "homepage": "https://github.com/delegator/jquery.cslider",
+  "main": "src/jquery.cslider.js",
+  "repository": "delegator/jquery.cslider",
+
+  "contributors": [
+    "Tom Richards <tom.r@delegator.com> (https://www.delegator.com/)"
+  ],
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "parallax",
+    "slider"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.3"
+  }
+}
