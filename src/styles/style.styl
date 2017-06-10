@@ -1,0 +1,263 @@
+parallax(url, height)
+    background-image: url(url)
+    height: height
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+primary = #2980b9
+white = #fff
+secondary = #3498db
+
+logo(size, weight, top, left)
+    font-family: 'Roboto', Helvetica, Arial, sans-serif
+    font-size: size !important
+    font-weight: weight
+    top: top !important
+    left: left !important
+    position: absolute
+
+body
+    /*font-family: Arial, Helvetica, sans-serif
+    font-family: 'Lateef', cursive;
+    font-family: 'Indie Flower', cursive;
+    */
+    font-size: 20px
+    font-family: 'Acme', sans-serif
+    h2
+        font-size: 40px
+
+.ikons
+    -webkit-transition: linear 3s;
+    -moz-transition: linear 3s;
+    -ms-transition: linear 3s;
+    -o-transition: linear 3s;
+    transition: linear 3s;
+
+.ikons:hover
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+// Introduction
+.intro
+    height: 600px !important
+    .trans
+        background-color: rgba(0, 0, 0, .8)
+        padding: 10% 10%
+        height: 600px
+    parallax('../img/workspace.png', 500px)
+    p
+        color: white
+    img
+        box-shadow: 0 0 5px 1px #fff
+        border-radius: 50%
+    h1
+        font-size: 70px
+        color: #fff
+    h3
+        color: #fff
+        text-shadow: 0 0 2px #ccc
+
+//About
+.about
+    padding-top: 50px !important
+    div
+        &:odd
+            padding-top: 20px
+        p
+            font-size: 20px
+
+
+.padding-fix
+    padding: 20px
+.red
+    background-color: #f44336
+    color: #ffffff
+
+#chartdiv
+    width: 100%
+    height: 40vw
+
+.devicons
+    font-size: 30px !important
+
+.k-header
+    margin-bottom 30px !important
+
+.margin-20
+    margin: 20px 0
+
+
+/* Slide in from the right*/
+
+.da-slider
+    width: 100%
+    min-width: 520px
+    height: 400px
+    position: relative
+    margin: 30px auto
+    overflow: hidden
+    background: transparent url(../img/blue.png) repeat 0 0
+    border-top: 8px solid primary
+    border-bottom: 8px solid primary
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff
+    -webkit-transition: background-position 1.4s ease-in-out 0.3s
+    -moz-transition: background-position 1.4s ease-in-out 0.3s
+    -o-transition: background-position 1.4s ease-in-out 0.3s
+    -ms-transition: background-position 1.4s ease-in-out 0.3s
+    transition: background-position 1.4s ease-in-out 0.3s
+    img
+        border: 8px solid primary
+        border-radius: 16px
+    p
+        color: white
+    .da-link
+        width: 180px
+
+.da-dots
+    span
+        background: secondary
+
+.da-arrows
+    span
+        background: primary
+
+.da-slide-fromright h2
+    animation: fromRightAnim1 0.6s ease-in 0.8s both
+
+.da-slide-fromright p
+    animation: fromRightAnim2 0.6s ease-in 0.8s both
+
+.da-slide-fromright .da-link
+    animation: fromRightAnim3 0.4s ease-in 1.2s both
+
+.da-slide-fromright .da-img
+    animation: fromRightAnim4 0.6s ease-in 0.8s both
+
+
+/* Adjust animations for different behavior of each element: */
+@keyframes fromRightAnim1
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+
+@keyframes fromRightAnim2
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+
+@keyframes fromRightAnim3
+    0%{ left: 110%; opacity: 0; }
+    1%{ left: 10%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+
+@keyframes fromRightAnim4
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 60%; opacity: 1; }
+
+
+@media only screen and (max-width: 300px)
+    body
+        font-size: 10px !important
+        h2
+            font-size: 20px
+        h3
+            font-size: 15px
+        .fa-4x
+            font-size: 1em
+    .intro
+        height: 300px !important
+        .trans
+            background-color: rgba(0, 0, 0, .8)
+            padding: 10% 10%
+            height: 300px
+        parallax('../img/workspace.png', 300px)
+        img
+            width: 64px
+            height: 64px
+            box-shadow: 0 0 5px 1px #fff
+            border-radius: 50%
+        h1
+            font-size: 25px !important
+            color: #fff
+
+    //About
+    .about
+        padding-top: 20px !important
+        div
+            &:odd
+                padding-top: 20px
+            p
+                font-size: 10px
+
+
+@media only screen and (max-width: 500px) and (min-width: 301px)
+    body
+        font-size: 13px !important
+        h2
+            font-size: 24px
+        h3
+            font-size: 18px
+        .fa-4x
+            font-size: 2em
+    .intro
+        height: 300px !important
+        .trans
+            background-color: rgba(0, 0, 0, .8)
+            padding: 10% 10%
+            height: 300px
+        parallax('../img/workspace.png', 300px)
+        img
+            width: 64px
+            height: 64px
+            box-shadow: 0 0 5px 1px #fff
+            border-radius: 50%
+        h1
+            font-size: 28px !important
+            color: #fff
+
+    //About
+    .about
+        padding-top: 20px !important
+        div
+            &:odd
+                padding-top: 20px
+            p
+                font-size: 13px
+
+
+@media only screen and (max-width: 700px) and (min-width: 501px)
+    body
+        font-size: 16px !important
+    h2
+        font-size: 28px
+    h3
+        font-size: 22px
+    .fa-4x
+        font-size: 3em
+    .intro
+        height: 400px !important
+        .trans
+            background-color: rgba(0, 0, 0, .8)
+            padding: 10% 10%
+            height: 400px
+        parallax('../img/workspace.png', 400px)
+        img
+            width: 96px
+            height: 96px
+            box-shadow: 0 0 5px 1px #fff
+            border-radius: 50%
+        h1
+            font-size: 34px !important
+            color: #fff
+
+    //About
+    .about
+        padding-top: 20px !important
+        div
+            &:odd
+                padding-top: 20px
+            p
+                font-size: 16px

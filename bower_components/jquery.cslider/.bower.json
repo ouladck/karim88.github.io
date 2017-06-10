@@ -1,0 +1,35 @@
+{
+  "name": "jquery.cslider",
+  "homepage": "https://github.com/delegator/jquery.cslider",
+  "authors": [
+    "Tom Richards <tom.r@delegator.com> (https://www.delegator.com/)"
+  ],
+  "description": "A simple parallax content slider with different animations for each slider element and a background parallax effect.",
+  "main": "src/jquery.cslider.js",
+  "keywords": [
+    "jquery",
+    "slider",
+    "parallax"
+  ],
+  "license": "codrops",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.3"
+  },
+  "_release": "f05fb657db",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f05fb657db38c7af29d96f822726b3ca1336d032"
+  },
+  "_source": "https://github.com/Le-Stagiaire/jquery.cslider.git",
+  "_target": "*",
+  "_originalSource": "jquery.cslider",
+  "_direct": true
+}

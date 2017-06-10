@@ -1,0 +1,5 @@
+node_modules
+/dist
+public/img/logo-small.png
+public/img/logo.png
+
