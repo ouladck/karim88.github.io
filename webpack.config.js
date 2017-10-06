@@ -30,13 +30,8 @@ module.exports = {
 					}, {
 						loader: "postcss-loader", // Run post css actions
 						options: {
-							plugins: function () { // post css plugins, can be exported to postcss.config.js
-								return [
-									require("precss"),
-									require("autoprefixer")
-								];
-							}
-					}
+							plugins: function () { return [ require("precss"), require("autoprefixer") ]; }
+						}
 					}, {
 						loader: "sass-loader", // compiles SASS to CSS
 					}, {
@@ -52,10 +47,10 @@ module.exports = {
 				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 				loader: "url-loader?limit=10000&mimetype=application/font-woff"
 			},
-      		{
-      			test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      			loader: "file-loader"
-      		},
+			{
+				test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				loader: "file-loader"
+			},
       		{
 				test: /\.modernizrrc.js$/,
 				use: [ "modernizr-loader" ]
@@ -69,7 +64,7 @@ module.exports = {
 				use: [
 					"url-loader?limit=10000",
 					{
-						loader: 'img-loader',
+						loader: "img-loader",
 						options: {
 							enabled: true,
 							gifsicle: {
@@ -113,4 +108,4 @@ module.exports = {
 		}
 	},
 	watch: true
-}
+};
