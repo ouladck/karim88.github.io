@@ -60,6 +60,14 @@ module.exports = {
 				use: [ "modernizr-loader", "json-loader" ]
 			},
 			{
+				test: /favicon\.ico$/,
+				loader: "url-loader",
+					query: { 
+					limit: 1,
+					name: '[name].[ext]',
+				},
+			},
+			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				use: [
 					"url-loader?limit=10000",

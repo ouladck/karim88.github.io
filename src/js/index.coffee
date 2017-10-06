@@ -3,6 +3,7 @@
 
 import 'font-awesome-webpack'
 import 'resolve-url-loader?name=[name].css!../styles/style.scss'
+import 'url-loader?name=[name].[ext]!../../favicon.ico'
 import gaz from'img-loader?name=[name].[ext]!../images/gaz.png'
 import comingSoon from'img-loader?name=[name].[ext]!../images/coming-soon.jpg'
 import planksetting from 'img-loader?name=[name].[ext]!../images/planksetting.png'
@@ -36,7 +37,6 @@ import 'file-loader?name=[name].[ext]!../index.html'
 	# Events
 	$(document).on('scroll', (e) ->
 		scrollPosition = $(document).scrollTop() + 110
-		console.log $(window).width()
 		$('nav div a').each(() ->
 			currentLink = $(this)
 			if currentLink.attr("href") == "#contact"
