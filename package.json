@@ -1,0 +1,49 @@
+{
+  "name": "karimoc.com",
+  "version": "2.0.0",
+  "description": "Fullstack Developer",
+  "main": "dist/index.js",
+  "repository": "karimoc.com",
+  "author": "Karim Oulad Chalha <herr.linux88@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -d",
+    "dev": "webpack watch",
+    "prod": "webpack -p"
+  },
+  "devDependencies": {
+    "ajv": "^5.2.3",
+    "autoprefixer": "^7.1.4",
+    "bootstrap": "4.0.0-beta",
+    "bootstrap-loader": "^2.2.0",
+    "coffee-loader": "^0.8.0",
+    "coffeescript": "^2.0.0",
+    "css-loader": "^0.28.7",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "img-loader": "^2.0.0",
+    "jquery": "^3.2.1",
+    "json-loader": "^0.5.7",
+    "less": "^2.7.2",
+    "modernizr": "^3.5.0",
+    "modernizr-loader": "^1.0.1",
+    "node-sass": "^4.5.3",
+    "popper.js": "^1.12.5",
+    "postcss-loader": "^2.0.6",
+    "precss": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "svg-loader": "^0.0.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.6.0",
+    "webpack-init": "^0.1.2"
+  },
+  "dependencies": {
+    "html-loader": "^0.5.1"
+  }
+}
