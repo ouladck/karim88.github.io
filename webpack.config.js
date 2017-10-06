@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const webpack = require('webpack');
-const path = require('path');
-const srcpath = './src/js/';
+const webpack = require("webpack");
+const path = require("path");
+const srcpath = "./src/js/";
 
 module.exports = {
 	entry: {
@@ -16,35 +16,35 @@ module.exports = {
 		rules: [
 			{
 				test: /\.coffee$/,
-				use: [ 'coffee-loader' ]
+				use: [ "coffee-loader" ]
 			},
 			{
 				test: /\.(scss)$/,
 				use: [
 					{
-						loader: 'style-loader', // inject CSS to page
+						loader: "style-loader", // inject CSS to page
 					}, {
-						loader: 'css-loader', // translates CSS into CommonJS modules
+						loader: "css-loader", // translates CSS into CommonJS modules
 					}, {
-						loader: 'postcss-loader', // Run post css actions
+						loader: "postcss-loader", // Run post css actions
 						options: {
 							plugins: function () { // post css plugins, can be exported to postcss.config.js
 								return [
-									require('precss'),
-									require('autoprefixer')
+									require("precss"),
+									require("autoprefixer")
 								];
 							}
 					}
 					}, {
-						loader: 'sass-loader', // compiles SASS to CSS
+						loader: "sass-loader", // compiles SASS to CSS
 					}, {
-						loader: 'resolve-url-loader', // compiles SASS to CSS
+						loader: "resolve-url-loader", // compiles SASS to CSS
 					}
 				]
 			},
 			{
 				test: /bootstrap\/js\//,
-				loader: 'imports?jQuery=jquery'
+				loader: "imports?jQuery=jquery"
 			},
 			{
 				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -56,27 +56,27 @@ module.exports = {
       		},
       		{
 				test: /\.modernizrrc.js$/,
-				use: [ 'modernizr-loader' ]
+				use: [ "modernizr-loader" ]
 			},
 			{
 				test: /\.modernizrrc(\.json)?$/,
-				use: [ 'modernizr-loader', 'json-loader' ]
+				use: [ "modernizr-loader", "json-loader" ]
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				use: [
-					'url-loader?limit=10000',
-					'img-loader'
+					"url-loader?limit=10000",
+					"img-loader"
 				]
 			}
 		]
 	},
 	plugins: [
 		new webpack.ProvidePlugin({
-			$: 'jquery',
-			jQuery: 'jquery',
-			'window.jQuery': 'jquery',
-			Popper: ['popper.js', 'default'],
+			$: "jquery",
+			jQuery: "jquery",
+			"window.jQuery": "jquery",
+			Popper: ["popper.js", "default"],
 
 		})
 

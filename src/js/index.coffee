@@ -37,10 +37,27 @@ import 'file-loader?name=[name].[ext]!../index.html'
 
 	# Events
 	$(document).on('scroll', (e) ->
-
+		scrollPosition = $(document).scrollTop() + 110
+		console.log $(window).width()
+		$('nav div a').each(() ->
+			currentLink = $(this)
+			if currentLink.attr("href") == "#contact"
+				if $(window).width() >= 680
+					scrollPosition += 500
+				else
+					scrollPosition += 200
+			refElement = $(currentLink.attr("href"))
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition)
+				$('nav div a').removeClass("active")
+				currentLink.addClass("active")
+			else
+				currentLink.removeClass("active")
+		)
+		# toggle nav background
 		if($('.k-nav').offset().top > 60)
 			$('.k-nav').addClass('navdown')
 		else
 			$('.k-nav').removeClass('navdown')
 	)
+
 ) jQuery
