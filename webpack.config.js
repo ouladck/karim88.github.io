@@ -3,6 +3,8 @@
 const webpack = require("webpack");
 const path = require("path");
 const srcpath = "./src/js/";
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 
 module.exports = {
 	entry: {
@@ -66,7 +68,30 @@ module.exports = {
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				use: [
 					"url-loader?limit=10000",
-					"img-loader"
+					{
+						loader: 'img-loader',
+						options: {
+							enabled: true,
+							gifsicle: {
+								interlaced: false
+							},
+							mozjpeg: {
+								progressive: true,
+								arithmetic: false
+							},
+							optipng: false, // disabled 
+							pngquant: {
+								floyd: 0.5,
+								speed: 2
+							},
+							svgo: {
+								plugins: [
+									{ removeTitle: true },
+									{ convertPathData: false }
+								]
+							}
+						}
+					}
 				]
 			}
 		]
@@ -78,7 +103,8 @@ module.exports = {
 			"window.jQuery": "jquery",
 			Popper: ["popper.js", "default"],
 
-		})
+		}),
+		new ExtractTextPlugin("style.css")
 
 	],
 	resolve: {

@@ -2,13 +2,11 @@
 
 
 import 'font-awesome-webpack'
-import 'bootstrap'
-import '../styles/style.scss'
+import 'resolve-url-loader?name=[name].css!../styles/style.scss'
 import gaz from'img-loader?name=[name].[ext]!../images/gaz.png'
 import comingSoon from'img-loader?name=[name].[ext]!../images/coming-soon.jpg'
 import planksetting from 'img-loader?name=[name].[ext]!../images/planksetting.png'
 import 'file-loader?name=[name].[ext]!../index.html'
-
 
 
 (($) ->
