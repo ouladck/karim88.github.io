@@ -5,14 +5,13 @@ const path = require("path");
 const srcpath = "./src/js/";
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-
 module.exports = {
 	entry: {
 		index: srcpath + "index.coffee",
 	},
 	output: {
 		path: __dirname + "/dist",
-		filename: "./[name].js"
+		filename: "./[name].bundle.js"
 	},
 	module: {
 		rules: [
@@ -22,26 +21,11 @@ module.exports = {
 			},
 			{
 				test: /\.(scss)$/,
-				use: [
-					{
-						loader: "style-loader", // inject CSS to page
-					}, {
-						loader: "css-loader", // translates CSS into CommonJS modules
-					}, {
-						loader: "postcss-loader", // Run post css actions
-						options: {
-							plugins: function () { return [ require("precss"), require("autoprefixer") ]; }
-						}
-					}, {
-						loader: "sass-loader", // compiles SASS to CSS
-					}, {
-						loader: "resolve-url-loader", // compiles SASS to CSS
-					}
-				]
-			},
-			{
-				test: /bootstrap\/js\//,
-				loader: "imports?jQuery=jquery"
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: ['css-loader', 'sass-loader'],
+					publicPath: '/dist'
+				})
 			},
 			{
 				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -107,8 +91,10 @@ module.exports = {
 			Popper: ["popper.js", "default"],
 
 		}),
-		new ExtractTextPlugin("style.css")
-
+		new ExtractTextPlugin({
+			filename: "style.bundle.css",
+			allChunks: true
+		})
 	],
 	resolve: {
 		alias: {

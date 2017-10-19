@@ -2,7 +2,7 @@
 
 
 import 'font-awesome-webpack'
-import 'resolve-url-loader?name=[name].css!../styles/style.scss'
+import '../styles/style.scss'
 import 'url-loader?name=[name].[ext]!../../favicon.ico'
 import gaz from'img-loader?name=[name].[ext]!../images/gaz.png'
 import comingSoon from'img-loader?name=[name].[ext]!../images/coming-soon.jpg'
@@ -13,7 +13,6 @@ import 'file-loader?name=[name].[ext]!../index.html'
 (($) ->
 	whatido = ['FULLSTACK', 'PHP', 'RUBY', 'PYTHON']
 	i = 0
-
 	$('.gaz-img').attr('src', gaz)
 	$('.coming-soon-img').attr('src', comingSoon)
 	$('.plank-img').attr('src', planksetting)
@@ -26,6 +25,7 @@ import 'file-loader?name=[name].[ext]!../index.html'
 		$('.works').show()
 		$('.contact').show()
 	, 2000)
+
 
 	setInterval(() ->
 		i++
@@ -57,5 +57,4 @@ import 'file-loader?name=[name].[ext]!../index.html'
 		else
 			$('.k-nav').removeClass('navdown')
 	)
-
 ) jQuery
