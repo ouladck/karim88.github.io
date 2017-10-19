@@ -10,7 +10,7 @@ html{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	
+
 	body{
 		margin: 0;
 		padding: 0;
@@ -181,7 +181,7 @@ html{
 }
 
 .mobile{
-	display: none;
+	display: none !important;
 }
 
 a{
@@ -297,8 +297,14 @@ a{
 
 
 @media only screen and (max-width: 1000px) {
+	.first{
+		margin-left: 0;
+	}
+	.col:first-child {
+		margin-left: 0;
+	}
 	.mobile{
-		display: inline;
+		display: inline !important;
 	}
 	.desktop{
 		display: none;
@@ -346,7 +352,7 @@ a{
 	}
 
 	.col-6 {
-		width: calc(33%);
+		width: calc(32%);
 	}
 }
 
