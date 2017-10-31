@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const path = require("path");
 const srcpath = "./src/js/";
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -24,7 +25,7 @@ module.exports = {
 				use: ExtractTextPlugin.extract({
 					fallback: 'style-loader',
 					use: ['css-loader', 'sass-loader'],
-				})
+				}),
 			},
 			{
 				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -93,7 +94,9 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename: "style.bundle.css",
 			allChunks: true
-		})
+		}),
+	    new OptimizeCssAssetsPlugin()
+
 	],
 	resolve: {
 		alias: {
