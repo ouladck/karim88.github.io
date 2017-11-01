@@ -24,7 +24,7 @@ import 'file-loader?name=[name].[ext]!../index.html'
 		$('.skills').show()
 		$('.works').show()
 		$('.contact').show()
-	, 2000)
+	, 500)
 
 
 	setInterval(() ->
