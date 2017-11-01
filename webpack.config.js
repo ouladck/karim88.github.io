@@ -5,6 +5,7 @@ const path = require("path");
 const srcpath = "./src/js/";
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -95,7 +96,11 @@ module.exports = {
 			filename: "style.bundle.css",
 			allChunks: true
 		}),
-	    new OptimizeCssAssetsPlugin()
+	    new OptimizeCssAssetsPlugin(),
+	    new CopyWebpackPlugin([
+	    	{ from: 'robots.txt', to: 'robots.txt' },
+	    	{ from: 'sitemap.xml', to: 'sitemap.xml' }
+	    ])
 
 	],
 	resolve: {
