@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: 
 
-Sitemap: http://karimoc.com/sitemap.xml
+Sitemap: http://karimoc.me/sitemap.xml

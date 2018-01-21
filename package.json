@@ -1,9 +1,9 @@
 {
-  "name": "karimoc.com",
+  "name": "karimoc.me",
   "version": "2.0.0",
   "description": "Fullstack Developer",
   "main": "dist/index.js",
-  "repository": "karimoc.com",
+  "repository": "https://github.com/karim88/karim88.github.io/tree/next",
   "author": "Karim Oulad Chalha <herr.linux88@gmail.com>",
   "license": "MIT",
   "scripts": {
