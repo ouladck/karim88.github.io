@@ -41,7 +41,7 @@
 		height: 50px;
 		padding: 10px;
 		border: 4px solid transparent;
-		border-right: 4px solid $color6;
+		border-right: 4px solid $color2;
 		animation: anim2 2s linear 0s infinite;
 	}
 	.circle3{
@@ -71,7 +71,7 @@
 		width: 50px;
 		height: 50px;
 		border: 4px solid transparent;
-		border-bottom: 4px solid $color6;
+		border-bottom: 4px solid $color2;
 		animation: anim2 2s linear 0s infinite;
 	}
 	.loader-text{
@@ -80,7 +80,7 @@
 		left: calc(50% - 100px);
 		text-transform: uppercase;
 		font-size: 1.4em;
-		color: $color6;
+		color: $color2;
 		span{
 			color: $color1;
 		}
