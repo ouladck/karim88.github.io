@@ -13,7 +13,7 @@ $k-anime1: cubic-bezier(0,.68,.54,.97);
     background-color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    color: $color2;
+    color: $secondary;
 }
 
 html{
@@ -97,7 +97,7 @@ html{
 			font-size: 20px;
 			top: 100vh;
 			left: 0;
-			background-color: $color5;
+			background-color: $light;
 			color: #FFF !important;
 			width: 100%;
 			.container{
@@ -106,7 +106,7 @@ html{
 				#whatido, #whoiam{
 					margin-top: 50px;
 					h3{
-						color: $color6;
+						color: $dark;
 					}
 				}
 			}
@@ -117,13 +117,13 @@ html{
 			color: #fff;
 			padding-top: 50px;
 			padding-bottom: 70px;
-			background: $color3;
-			background: -webkit-linear-gradient(to right, $color3, $color4);
-			background: linear-gradient(to right, $color3, $color4);
+			background: $primary;
+			background: -webkit-linear-gradient(to right, $primary, $light);
+			background: linear-gradient(to right, $primary, $light);
 			div{
 				margin-top: 50px;
 				h3{
-					color: $color6;
+					color: $dark;
 				}
 			}
 		}
@@ -132,12 +132,12 @@ html{
 			font-size: 20px;
 			color: #000;
 			padding: 50px 70px 70px 70px;
-			background: $color5;
+			background: $light;
 			.first{
 				margin-top: 50px;
 				padding-top: 30px;
 				h3{
-					color: $color6;
+					color: $dark;
 				}
 			}
 		}
@@ -145,16 +145,16 @@ html{
 		.contact{
 			display: none;
 			font-size: 20px;
-			color: $color1;
+			color: $dark;
 			padding-top: 50px;
 			padding-bottom: 30px;
-			background: $color1;
-			background: -webkit-linear-gradient(to right, $color1, $color5);
-			background: linear-gradient(to right, $color1, $color5);
+			background: $primary;
+			background: -webkit-linear-gradient(to right, $primary, $light);
+			background: linear-gradient(to right, $primary, $light);
 			div{
 				margin-top: 50px;
 				h3{
-					color: $color6;
+					color: $dark;
 				}
 			}
 		}
@@ -163,29 +163,29 @@ html{
 }
 
 .title{
-	border-bottom: 3px solid $color1;
+	border-bottom: 3px solid $primary;
 	display: inline;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: $color1;
+	background-color: $dark;
 	padding: 10px;
 }
 
 .navdown{	
 	background-color: rgb(255, 255, 255) !important;
-	color: $color1 !important;
+	color: $primary !important;
 	padding-top: 30px !important;
 	a{
-		color: $color1 !important;
+		color: $primary !important;
 		&:hover{
-			border-bottom: 3px solid $color1 !important;
+			border-bottom: 3px solid $primary !important;
 			padding-bottom: 5px;
 		}
 	}
 }
 
 .active{
-	border-bottom: 3px solid $color1 !important;
+	border-bottom: 3px solid $primary !important;
 	padding-bottom: 5px;
 }
 

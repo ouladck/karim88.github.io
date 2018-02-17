@@ -26,7 +26,7 @@
 		width: 50px;
 		height: 50px;
 		border: 4px solid transparent;
-		border-top: 4px solid $color1;
+		border-top: 4px solid $primary;
 		animation: anim1 2s linear 0s infinite;
 	}
 	.circle2{
@@ -41,7 +41,7 @@
 		height: 50px;
 		padding: 10px;
 		border: 4px solid transparent;
-		border-right: 4px solid $color2;
+		border-right: 4px solid $dark;
 		animation: anim2 2s linear 0s infinite;
 	}
 	.circle3{
@@ -56,7 +56,7 @@
 		height: 50px;
 		padding: 20px;
 		border: 4px solid transparent;
-		border-left: 4px solid $color1;
+		border-left: 4px solid $primary;
 		animation: anim1 2s linear 0s infinite;
 	}
 	.circle4{
@@ -71,7 +71,7 @@
 		width: 50px;
 		height: 50px;
 		border: 4px solid transparent;
-		border-bottom: 4px solid $color2;
+		border-bottom: 4px solid $dark;
 		animation: anim2 2s linear 0s infinite;
 	}
 	.loader-text{
@@ -80,9 +80,9 @@
 		left: calc(50% - 100px);
 		text-transform: uppercase;
 		font-size: 1.4em;
-		color: $color2;
+		color: $dark;
 		span{
-			color: $color1;
+			color: $primary;
 		}
 	}
 }
