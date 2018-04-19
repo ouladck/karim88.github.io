@@ -1,7 +1,7 @@
 @import 'loader';
 
-$red: #e04643;
-$back: #000;
+$red: #FF4136;
+$back: #111111;
 $front: $red;
 $k-anime1: cubic-bezier(0,.68,.54,.97);
 
@@ -118,26 +118,23 @@ html{
 			padding-top: 50px;
 			padding-bottom: 70px;
 			background: $primary;
-			background: -webkit-linear-gradient(to right, $primary, $light);
-			background: linear-gradient(to right, $primary, $light);
 			div{
 				margin-top: 50px;
 				h3{
-					color: $dark;
+					color: $light;
 				}
 			}
 		}
 		.works{
 			display: none;
 			font-size: 20px;
-			color: #000;
+			color: $light;
 			padding: 50px 70px 70px 70px;
-			background: $light;
 			.first{
 				margin-top: 50px;
 				padding-top: 30px;
 				h3{
-					color: $dark;
+					color: $light;
 				}
 			}
 		}
@@ -145,16 +142,16 @@ html{
 		.contact{
 			display: none;
 			font-size: 20px;
-			color: $dark;
+			color: $light;
 			padding-top: 50px;
 			padding-bottom: 30px;
 			background: $primary;
-			background: -webkit-linear-gradient(to right, $primary, $light);
-			background: linear-gradient(to right, $primary, $light);
+			background: -webkit-linear-gradient(135deg, $primary, $primary 60%, $secondary);
+			background: linear-gradient(135deg, $primary, $primary 60%, $secondary);
 			div{
 				margin-top: 50px;
 				h3{
-					color: $dark;
+					color: $light;
 				}
 			}
 		}
@@ -163,15 +160,15 @@ html{
 }
 
 .title{
-	border-bottom: 3px solid $primary;
+	border-bottom: 3px solid $secondary;
 	display: inline;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: $dark;
+	background-color: $primary;
 	padding: 10px;
 }
 
-.navdown{	
+.navdown{
 	background-color: rgb(255, 255, 255) !important;
 	color: $primary !important;
 	padding-top: 30px !important;
@@ -368,7 +365,7 @@ a{
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 680px) {
-	.col { 
+	.col {
 		margin: 1% 0 1% 0%;
 	}
 	.col-1, .col-2 {
