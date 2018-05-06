@@ -284,7 +284,9 @@ a{
 .col-6 {
 	width: 15%;
 }
-
+.col-3 {
+	width: 30%;
+}
 
 
 
@@ -368,7 +370,7 @@ a{
 	.col {
 		margin: 1% 0 1% 0%;
 	}
-	.col-1, .col-2 {
+	.col-1, .col-2, .col-3 {
 		width: 100%;
 	}
 }
