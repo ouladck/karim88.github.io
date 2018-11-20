@@ -1,0 +1,37 @@
+.who .row {
+    background-color: rgba(232, 232, 232, 1);
+}
+
+.who .who-img {
+    position: relative;
+    background-image: url('../../images/karim.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+.who-text {
+    padding: 80px;
+    display: -webkit-flex;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.who .text-primary {
+    color: rgba(182, 78, 56, 1) !important;
+    text-transform: uppercase;
+    width: 150px !important;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    .who .text-primary {
+        width: auto !important;
+    }
+}

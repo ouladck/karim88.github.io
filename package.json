@@ -1,47 +1,26 @@
 {
-  "name": "karimoc.me",
-  "version": "2.0.0",
-  "description": "Fullstack Developer",
-  "main": "dist/index.js",
-  "repository": "https://github.com/karim88/karim88.github.io/tree/next",
-  "author": "Karim Oulad Chalha <herr.linux88@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "build": "webpack -d",
-    "dev": "webpack watch",
-    "prod": "webpack -p"
+  "name": "karimoc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "wow.js": "^1.2.2"
   },
-  "devDependencies": {
-    "ajv": "^5.2.3",
-    "autoprefixer": "^7.1.4",
-    "coffee-loader": "^0.8.0",
-    "coffeescript": "^2.0.0",
-    "copy-webpack-plugin": "^4.2.0",
-    "css-loader": "^0.28.7",
-    "exports-loader": "^0.6.4",
-    "extract-text-webpack-plugin": "^3.0.1",
-    "file-loader": "^0.11.2",
-    "font-awesome": "^4.7.0",
-    "font-awesome-webpack": "^0.0.5-beta.2",
-    "html-loader": "^0.5.1",
-    "img-loader": "^2.0.0",
-    "jquery": "^3.2.1",
-    "json-loader": "^0.5.7",
-    "less": "^2.7.2",
-    "modernizr": "^3.5.0",
-    "modernizr-loader": "^1.0.1",
-    "node-sass": "^4.5.3",
-    "optimize-css-assets-webpack-plugin": "^3.2.0",
-    "popper.js": "^1.12.5",
-    "postcss-loader": "^2.0.6",
-    "precss": "^2.0.0",
-    "raw-loader": "^0.5.1",
-    "resolve-url-loader": "^2.1.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "svg-loader": "^0.0.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.6.0",
-    "webpack-init": "^0.1.2"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
