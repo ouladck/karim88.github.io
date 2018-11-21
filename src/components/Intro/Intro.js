@@ -10,7 +10,7 @@ class Intro extends Component {
             <div className="overlayer">
                 <div className="k-intro">
                     <h1 className="wow flipInX">{this.props.name}</h1>
-                    <p className="text-muted">{this.props.position}</p>
+                    <p className="text-muted wow flash">{this.props.position}</p>
                 </div>
                 <img src={introLayer} className="svg8" alt="logo" />
                 <div className="row k-social">

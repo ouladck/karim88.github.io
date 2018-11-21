@@ -4,6 +4,8 @@ import Intro from "./components/Intro/Intro";
 import WOW from "wow.js";
 import WhoAmI from "./components/WhoAmI/WhoAmI";
 import Timeline from "./components/Timeline/Timeline";
+import Skill from "./components/Skill/Skill";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
 
@@ -23,6 +25,7 @@ class App extends Component {
             "SKILLED IN PYTHON, PHP7, RUBY, JQUERY, ANGULAR.";
         this.experiences = [
             {
+                id: 1, // This is just for lists key
                 position: 'Engineering of Computer Systems',
                 company: 'SupMTI',
                 description: 'School of Management, Telecommunications and Computer Science',
@@ -30,6 +33,7 @@ class App extends Component {
                 icon: 'fas fa-graduation-cap fa-2x'
             },
             {
+                id: 2,
                 position: 'Lead Web Developer',
                 company: 'Graviton Geolocation',
                 description: <span>Developing an Agricultural Information Management System for <span className="text-secondary">Cosumar Group</span>.</span>,
@@ -37,6 +41,7 @@ class App extends Component {
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
+                id: 3,
                 position: 'Back-End Developer',
                 company: 'Graviton Geolocation',
                 description: `Integrated Odoo ERP to be used for internal usage & Developed/Maintained a existing Agricultural Information Management System.`,
@@ -44,6 +49,7 @@ class App extends Component {
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
+                id: 4,
                 position: 'Full-Stack Developer',
                 company: 'ITGSM Group',
                 description: 'Maintain & Refactoring some existing projects in Symfony - Laravel - OctoberCMS.',
@@ -51,6 +57,7 @@ class App extends Component {
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
+                id: 5,
                 position: 'Lead Web Developer',
                 company: 'Zayousa BPO and WEB Agency',
                 description: <span>Development of a CRM platform for Gas and Electricity distributors for the gas provider company <span className="text-secondary">Gazprom Energy France</span>.</span>,
@@ -58,6 +65,7 @@ class App extends Component {
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
+                id: 6,
                 position: 'Full-Stack Developer',
                 company: 'Majjane Servicos',
                 description: 'Development of a web platform that backup folders and/or servers manually or by scheduling them.',
@@ -65,6 +73,7 @@ class App extends Component {
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
+                id: 7,
                 position: 'Computer Development Technique',
                 company: 'OFPPT ISTA',
                 description: 'Specialized Institute of Applied Technology - Hay-Assalam',
@@ -72,6 +81,46 @@ class App extends Component {
                 icon: 'fas fa-graduation-cap fa-2x'
             }
         ];
+        this.skills = [
+            {
+                id: 1,
+                name: 'Front-End Development',
+                icon: 'fas fa-laptop-code fa-3x',
+                skills: [
+                    <p>Angular <span className="badge badge-primary">advanced</span></p>,
+                    <p>Bootstrap <span className="badge badge-primary">advanced</span></p>,
+                    <p>SASS/LESS</p>,
+                    <p>Webpack</p>,
+                    <p>DevExpress <span className="badge badge-primary">advanced</span></p>
+                ]
+            },
+            {
+                id: 2,
+                name: 'Back-End Development',
+                icon: 'fas fa-keyboard fa-3x',
+                skills: [
+                    <p>Laravel <span className="badge badge-primary">advanced</span></p>,
+                    <p>NodeJS</p>,
+                    <p>Python</p>,
+                    <p>MySQL</p>,
+                    <p>PostgreSQL</p>,
+                    <p>MongoDB</p>,
+                    <p>MSSQL</p>
+                ]
+            },
+            {
+                id: 3,
+                name: 'Tools',
+                icon: 'fas fa-wrench fa-3x',
+                skills: [
+                    <p>Trello <span className="badge badge-primary">advanced</span></p>,
+                    <p>Gnu/Linux <span className="badge badge-primary">advanced</span></p>,
+                    <p>SSH</p>,
+                    <p>GIT <span className="badge badge-primary">advanced</span></p>,
+                    <p>Slack</p>
+                ]
+            }
+            ];
     }
     render() {
         return (
@@ -87,6 +136,8 @@ class App extends Component {
             <Timeline
                 experiences={this.experiences}
             />
+            <Skill skills={this.skills}/>
+            <Footer/>
           </div>
         );
     }

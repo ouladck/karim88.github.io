@@ -5,12 +5,15 @@ class Timeline extends Component {
     constructor (props) {
         super(props);
         this.experiences = props.experiences.map(experience => {
-            return <div className="cd-timeline__block js-cd-block">
+            return <div key={experience.id} className="cd-timeline__block js-cd-block">
                 <div className="cd-timeline__img cd-timeline__img--picture js-cd-img">
                     <i className={experience.icon}></i>
                 </div>
 
-                <div className="cd-timeline__content js-cd-content">
+                <div className={(experience.id % 2 === 0) ?
+                    'cd-timeline__content js-cd-content  wow slideInRight'
+                    : 'cd-timeline__content js-cd-content  wow slideInLeft'
+                }>
                     <h3 className="position">
                         {experience.position}
                     </h3>

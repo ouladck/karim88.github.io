@@ -10,24 +10,24 @@ class WhoAmI extends Component {
 
                     </div>
                     <div className="col-md who-text">
-                        <p>
+                        <p className="wow slideInRight">
                             <span className="text-primary">Name: </span>
                             {this.props.name}
                         </p>
-                        <p>
+                        <p className="wow slideInRight">
                             <span className="text-primary">Email: </span>
                             <a href="mailto://karim@karimoc.me">{this.props.email}</a>
                         </p>
-                        <p>
+                        <p className="wow slideInRight">
                             <span className="text-primary">Mobile: </span>
                             {this.props.tel}
                         </p>
-                        <p>
+                        <p className="wow slideInRight">
                             <span className="text-primary">Address: </span>
                             {this.props.address}
                         </p>
                         <hr />
-                        <p className="text-muted">
+                        <p className="text-muted wow slideInRight">
                             {this.props.description}
                         </p>
                     </div>

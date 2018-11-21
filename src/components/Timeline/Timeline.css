@@ -27,6 +27,39 @@
     color: #050505;
 }
 
+@media only screen and (max-width: 600px) {
+    .timeline-container .cd-timeline__img i {
+        font-size: 1.2em;
+        padding: 9px;
+    }
+
+    .timeline-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .timeline-container h2 {
+        font-size: 28px;
+    }
+
+    .timeline-container h3 {
+        font-size: 20px;
+    }
+
+    .timeline-container .company {
+        font-size: 14px;
+    }
+
+    /*.timeline-container p {
+        display: none;
+        font-size: 17px;
+    }*/
+
+    .timeline-container .cd-timeline__date {
+        color: #050505 !important;
+        font-size: 16px;
+    }
+}
 /* --------------------------------
 
 Primary style
