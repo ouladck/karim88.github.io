@@ -87,11 +87,11 @@ class App extends Component {
                 name: 'Front-End Development',
                 icon: 'fas fa-laptop-code fa-3x',
                 skills: [
-                    <p>Angular <span className="badge badge-primary">advanced</span></p>,
-                    <p>Bootstrap <span className="badge badge-primary">advanced</span></p>,
-                    <p>SASS/LESS</p>,
-                    <p>Webpack</p>,
-                    <p>DevExpress <span className="badge badge-primary">advanced</span></p>
+                    <p key="1">Angular <span className="badge badge-primary">advanced</span></p>,
+                    <p key="2">Bootstrap <span className="badge badge-primary">advanced</span></p>,
+                    <p key="3">SASS/LESS</p>,
+                    <p key="4">Webpack</p>,
+                    <p key="5">DevExpress <span className="badge badge-primary">advanced</span></p>
                 ]
             },
             {
@@ -99,13 +99,13 @@ class App extends Component {
                 name: 'Back-End Development',
                 icon: 'fas fa-keyboard fa-3x',
                 skills: [
-                    <p>Laravel <span className="badge badge-primary">advanced</span></p>,
-                    <p>NodeJS</p>,
-                    <p>Python</p>,
-                    <p>MySQL</p>,
-                    <p>PostgreSQL</p>,
-                    <p>MongoDB</p>,
-                    <p>MSSQL</p>
+                    <p key="1">Laravel <span className="badge badge-primary">advanced</span></p>,
+                    <p key="2">NodeJS</p>,
+                    <p key="3">Python</p>,
+                    <p key="4">MySQL</p>,
+                    <p key="5">PostgreSQL</p>,
+                    <p key="6">MongoDB</p>,
+                    <p key="7">MSSQL</p>
                 ]
             },
             {
@@ -113,11 +113,11 @@ class App extends Component {
                 name: 'Tools',
                 icon: 'fas fa-wrench fa-3x',
                 skills: [
-                    <p>Trello <span className="badge badge-primary">advanced</span></p>,
-                    <p>Gnu/Linux <span className="badge badge-primary">advanced</span></p>,
-                    <p>SSH</p>,
-                    <p>GIT <span className="badge badge-primary">advanced</span></p>,
-                    <p>Slack</p>
+                    <p key="1">Trello <span className="badge badge-primary">advanced</span></p>,
+                    <p key="2">Gnu/Linux <span className="badge badge-primary">advanced</span></p>,
+                    <p key="3">SSH</p>,
+                    <p key="4">GIT <span className="badge badge-primary">advanced</span></p>,
+                    <p key="5">Slack</p>
                 ]
             }
             ];

@@ -88,3 +88,37 @@
     padding-right: 0;
   }
 }
+
+
+@media only screen and (max-width: 350px) {
+  .intro .k-intro {
+    padding-left: 37px;
+    font-size: 8px;
+  }
+
+  .intro .k-intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro .svg8 {
+    width: 100%;
+  }
+
+  .k-intro {
+    top: 20%;
+  }
+
+  .intro .k-social {
+    padding-right: 30px;
+    padding-bottom: 40%;
+  }
+
+  .intro .k-social a {
+    padding-left: 10px;
+  }
+
+  .intro .fa-3x {
+    font-size: 2em;
+    padding-right: 0;
+  }
+}
