@@ -11,7 +11,7 @@ class Footer extends Component {
                             <h2 className="">Contacts</h2>
                             <ul>
                                 <li className=" wow zoomIn"><i className="fas fa-phone"></i> +2126 416 235 27</li>
-                                <li className=" wow zoomIn"><i className="fas fa-at"></i> karim@karimoc.me</li>
+                                <li className=" wow zoomIn"><i className="fas fa-at"></i> contact@karimslab.com</li>
                                 <li className=" wow zoomIn"><i className="fas fa-at"></i> herr.linux88@gmail.com</li>
                             </ul>
                         </div>
