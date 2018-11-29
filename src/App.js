@@ -17,7 +17,7 @@ class App extends Component {
         super();
         this.name = 'Karim Oulad Chalha';
         this.position = 'PHP developer';
-        this.email = 'karim@karimoc.me';
+        this.email = 'contact@karimslab.com';
         this.tel = '+2126-4162-3527';
         this.address = '41 Rue Laymoune, Hay Cheikh Lamfadel, 11020 Salé';
         this.description = "I’M AN EAGER PROGRAMMER FROM MOROCCO, ARDENT ABOUT OPEN SOURCE AND THE NEW IT TECHNOLOGY." +
