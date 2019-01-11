@@ -1,0 +1,80 @@
+.portfolio {
+    padding: 80px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: rgba(182, 78, 56, 1);
+    color: rgba(232, 232, 232, 1);
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.portfolio .row {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.card-img {
+    position: relative;
+    background-image: url('https://picsum.photos/500/400?random');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.link-icon {
+    display: none;
+    color: #507f7f !important;
+    vertical-align: middle;
+    border: 8px solid #507f7f;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 25%;
+}
+
+.layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+}
+.layer:hover {
+    background-color: #fff8;
+}
+.layer:hover .link-icon {
+    display: inline-block;
+}
+
+
+.technologie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 900;
+    background-color: transparent;
+}
+.technologie-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 100px solid #507f7f;
+}

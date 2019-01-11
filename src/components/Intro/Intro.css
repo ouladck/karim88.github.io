@@ -18,7 +18,18 @@
   padding: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
+.text-danger:hover {
+  color: rgba(182, 78, 56, 1) !important;
+}
+.text-facebook:hover {
+  color: #4267b2 !important;
+}
+.text-linkedin:hover {
+  color: #0073b1 !important;
+}
+.text-github:hover {
+  color: #FFF !important;
+}
 
 .intro .svg8 {
   position: absolute;

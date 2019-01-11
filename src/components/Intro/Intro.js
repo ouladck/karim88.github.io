@@ -16,22 +16,22 @@ class Intro extends Component {
                 <div className="row k-social">
                     <div className="col-xs">
                         <a href="https://github.com/karim88" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-github fa-3x wow jello"></i>
+                            <i className="fab fa-github text-github fa-3x wow jello"></i>
                         </a>
                     </div>
                     <div className="col-xs">
                         <a href="https://linkedin.com/in/karim88" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-linkedin fa-3x wow jello"></i>
+                            <i className="fab fa-linkedin text-linkedin fa-3x wow jello"></i>
                         </a>
                     </div>
                     <div className="col-xs">
                         <a href="https://fb.com/herr.linux88" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-facebook fa-3x wow jello"></i>
+                            <i className="fab fa-facebook text-facebook fa-3x wow jello"></i>
                         </a>
                     </div>
                     <div className="col-xs">
-                        <a href="https://plus.google.com/+كريمأولادالشلحة/posts" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-google-plus fa-3x wow jello"></i>
+                        <a href="https://cv.karimoc.me/pdf/karim_oulad_chalha_v4_6.pdf" rel="noopener noreferrer" target="_blank">
+                            <i className="fas fa-file-pdf text-danger fa-3x wow jello"></i>
                         </a>
                     </div>
                 </div>

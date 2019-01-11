@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './Footer.css';
 
 class Footer extends Component {
+
+    constructor (props) {
+        super(props);
+        this.email = props.email;
+        this.email_alt = props.email_alt;
+        this.tel = props.tel;
+        this.country = props.country;
+        this.country_link = props.country_link;
+
+    }
     render() {
         return (
             <div className="footer">
@@ -10,14 +20,14 @@ class Footer extends Component {
                         <div className="col-md-4">
                             <h2 className="">Contacts</h2>
                             <ul>
-                                <li className=" wow zoomIn"><i className="fas fa-phone"></i> +2126 416 235 27</li>
-                                <li className=" wow zoomIn"><i className="fas fa-at"></i> contact@karimslab.com</li>
-                                <li className=" wow zoomIn"><i className="fas fa-at"></i> herr.linux88@gmail.com</li>
+                                <li className=" wow zoomIn"><i className="fas fa-phone"></i> {this.tel}</li>
+                                <li className=" wow zoomIn"><i className="fas fa-at"></i> {this.email}</li>
+                                <li className=" wow zoomIn"><i className="fas fa-at"></i> {this.email_alt}</li>
                             </ul>
                         </div>
                     </div>
                     <div className="copyleft-footer wow slideInUp">
-                        <p>Made by <i className="fas fa-heart wow pulse infinite"></i> From <a href="https://en.wikipedia.org/wiki/Morocco">Morocco</a></p>
+                        <p>Made by <i className="fas fa-heart wow pulse infinite"></i> From <a href={this.country_link}>{this.country}</a></p>
                     </div>
                 </div>
             </div>

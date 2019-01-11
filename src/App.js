@@ -6,6 +6,7 @@ import WhoAmI from "./components/WhoAmI/WhoAmI";
 import Timeline from "./components/Timeline/Timeline";
 import Skill from "./components/Skill/Skill";
 import Footer from "./components/Footer/Footer";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 class App extends Component {
 
@@ -17,8 +18,11 @@ class App extends Component {
         super();
         this.name = 'Karim Oulad Chalha';
         this.position = 'PHP developer';
-        this.email = 'contact@karimslab.com';
+        this.email = 'ouladchalha.k@gmail.com';
+        this.email_alt = 'contact@karimslab.com';
         this.tel = '+2126-4162-3527';
+        this.country = 'Morocco';
+        this.country_link = 'https://en.wikipedia.org/wiki/Morocco';
         this.address = '41 Rue Laymoune, Hay Cheikh Lamfadel, 11020 Salé';
         this.description = "I’M AN EAGER PROGRAMMER FROM MOROCCO, ARDENT ABOUT OPEN SOURCE AND THE NEW IT TECHNOLOGY." +
             "EXPERIENCED FULLSTACK DEVELOPER WITH A DEMONSTRATED HISTORY OF WORKING IN THE COMPUTER SOFTWARE INDUSTRY." +
@@ -137,7 +141,14 @@ class App extends Component {
                 experiences={this.experiences}
             />
             <Skill skills={this.skills}/>
-            <Footer/>
+            <Portfolio/>
+            <Footer
+                email={this.email}
+                email_alt={this.email_alt}
+                tel={this.tel}
+                country={this.country}
+                country_link={this.country_link}
+                />
           </div>
         );
     }
