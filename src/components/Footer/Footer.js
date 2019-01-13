@@ -22,7 +22,6 @@ class Footer extends Component {
                             <ul>
                                 <li className=" wow zoomIn"><i className="fas fa-phone"></i> {this.tel}</li>
                                 <li className=" wow zoomIn"><i className="fas fa-at"></i> {this.email}</li>
-                                <li className=" wow zoomIn"><i className="fas fa-at"></i> {this.email_alt}</li>
                             </ul>
                         </div>
                     </div>
