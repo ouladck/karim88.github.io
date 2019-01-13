@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Intro.css'
 import introLayer from '../../images/intro-layer.svg';
+import logo from '../../images/logo-128.png';
 
 
 class Intro extends Component {
 
     render() {
         return (<div className="intro">
+            <img className="logo" src={logo} alt="Logo"/>
             <div className="overlayer">
                 <div className="k-intro">
                     <h1 className="wow flipInX">{this.props.name}</h1>
@@ -30,7 +32,7 @@ class Intro extends Component {
                         </a>
                     </div>
                     <div className="col-xs">
-                        <a href="https://cv.karimoc.me/pdf/karim_oulad_chalha_v4_6.pdf" rel="noopener noreferrer" target="_blank">
+                        <a href="https://cv.karimslab.com/pdf/karim_oulad_chalha_v4_6.pdf" rel="noopener noreferrer" target="_blank">
                             <i className="fas fa-file-pdf text-danger fa-3x wow jello"></i>
                         </a>
                     </div>

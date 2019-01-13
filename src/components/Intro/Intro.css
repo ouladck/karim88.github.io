@@ -39,6 +39,13 @@
   width: 50%;
 }
 
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+
 
 .k-intro {
   z-index: 4;
