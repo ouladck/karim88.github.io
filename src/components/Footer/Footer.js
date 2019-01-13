@@ -10,7 +10,6 @@ class Footer extends Component {
         this.tel = props.tel;
         this.country = props.country;
         this.country_link = props.country_link;
-
     }
     render() {
         return (
@@ -26,7 +25,7 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div className="copyleft-footer wow slideInUp">
-                        <p>Made by <i className="fas fa-heart wow pulse infinite"></i> From <a href={this.country_link}>{this.country}</a></p>
+                        <p>Made with <i className="fas fa-heart wow pulse infinite"></i> From <a href={this.country_link}>{this.country}</a></p>
                     </div>
                 </div>
             </div>
