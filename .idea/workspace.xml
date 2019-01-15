@@ -4,10 +4,7 @@
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-    </list>
+    <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -55,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -286,11 +283,12 @@
       <workItem from="1546817087016" duration="4307000" />
       <workItem from="1547403429005" duration="2480000" />
       <workItem from="1547413967163" duration="169000" />
+      <workItem from="1547414485035" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55148000" />
+    <option name="totallyTimeSpent" value="55171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="27" width="1024" height="741" extended-state="6" />
@@ -496,7 +494,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Intro/Intro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
