@@ -7,6 +7,11 @@ import Timeline from "./components/Timeline/Timeline";
 import Skill from "./components/Skill/Skill";
 import Footer from "./components/Footer/Footer";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Zayousa from "./components/Portfolio/images/zayousa.png";
+import Falak from "./components/Portfolio/images/falak.png";
+import MrcMaroc from "./components/Portfolio/images/mrcmaroc.png";
+import Planksetting from "./components/Portfolio/images/planksetting.gif";
+import Game5x5 from "./components/Portfolio/images/demo.gif";
 
 class App extends Component {
 
@@ -17,7 +22,7 @@ class App extends Component {
     constructor () {
         super();
         this.name = 'Karim Oulad Chalha';
-        this.position = 'PHP developer';
+        this.position = 'Angular developer';
         this.email = 'ouladchalha.k@gmail.com';
         this.email_alt = 'contact@karimslab.com';
         this.tel = '+2126-4162-3527';
@@ -26,10 +31,18 @@ class App extends Component {
         this.address = '41 Rue Laymoune, Hay Cheikh Lamfadel, 11020 Salé';
         this.description = "I’M AN EAGER PROGRAMMER FROM MOROCCO, ARDENT ABOUT OPEN SOURCE AND THE NEW IT TECHNOLOGY." +
             "EXPERIENCED FULLSTACK DEVELOPER WITH A DEMONSTRATED HISTORY OF WORKING IN THE COMPUTER SOFTWARE INDUSTRY." +
-            "SKILLED IN PYTHON, PHP7, RUBY, JQUERY, ANGULAR.";
+            "SKILLED IN ANGULAR, LARAVEL, PYTHON.";
         this.experiences = [
             {
-                id: 1, // This is just for lists key
+                id: 8, // This is just for lists key
+                position: 'Lead Web Developer',
+                company: 'RC2K / Iliad Free',
+                description: <span>Developing an Incident Management System for <span className="text-secondary">Iliad Free.</span></span>,
+                time: 'Jan 2019 - Current',
+                icon: 'fas fa-briefcase fa-2x'
+            },
+            {
+                id: 1,
                 position: 'Engineering of Computer Systems',
                 company: 'SupMTI',
                 description: 'School of Management, Telecommunications and Computer Science',
@@ -124,7 +137,39 @@ class App extends Component {
                     <p key="5">Slack</p>
                 ]
             }
-            ];
+        ];
+        this.portfolio = [
+            {
+                id: 1,
+                image: Zayousa,
+                link: 'https://zayousa.com',
+                technologie: 'WORDPRESS'
+            },
+            {
+                id: 2,
+                image: Falak,
+                link: 'https://astrologie-khattabi.com',
+                technologie: 'GHOST'
+            },
+            {
+                id: 3,
+                image: MrcMaroc,
+                link: 'https://mrcmaroc.org',
+                technologie: 'WORDPRESS'
+            },
+            {
+                id: 4,
+                image: Planksetting,
+                link: 'https://planksetting.github.io/',
+                technologie: 'PYGTK'
+            },
+            {
+                id: 5,
+                image: Game5x5,
+                link: 'https://5x5game.github.io',
+                technologie: 'JQUERY'
+            }
+        ];
     }
     render() {
         return (
@@ -141,7 +186,7 @@ class App extends Component {
                 experiences={this.experiences}
             />
             <Skill skills={this.skills}/>
-            <Portfolio/>
+            <Portfolio portfolio={this.portfolio}/>
             <Footer
                 email={this.email}
                 email_alt={this.email_alt}
