@@ -34,6 +34,14 @@ class App extends Component {
             "SKILLED IN ANGULAR, LARAVEL, PYTHON.";
         this.experiences = [
             {
+                id: 9,
+                position: 'Master\'s Degree Business Analytics et Big Data',
+                company: 'FST Settat',
+                description: 'Faculté des Sciences et Techniques Settat',
+                time: 'Oct 2019 - Current',
+                icon: 'fas fa-graduation-cap fa-2x'
+            },
+            {
                 id: 8, // This is just for lists key
                 position: 'Lead Web Developer',
                 company: 'RC2K / Iliad Free',
@@ -46,7 +54,7 @@ class App extends Component {
                 position: 'Engineering of Computer Systems',
                 company: 'SupMTI',
                 description: 'School of Management, Telecommunications and Computer Science',
-                time: 'Oct 2018 - Current',
+                time: 'Oct 2018 - 2019',
                 icon: 'fas fa-graduation-cap fa-2x'
             },
             {
