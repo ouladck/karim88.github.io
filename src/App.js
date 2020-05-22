@@ -34,7 +34,7 @@ class App extends Component {
             "SKILLED IN ANGULAR, LARAVEL, PYTHON.";
         this.experiences = [
             {
-                id: 9,
+                id: 10,
                 position: 'Senior Web Developer',
                 company: 'CodeCave',
                 description: <span>Participating of the development of a cyber-security penetration testing platform called <a hrefh="https://www.buglab.io/">Buglab</a></span>,
@@ -121,7 +121,7 @@ class App extends Component {
                 icon: 'fas fa-laptop-code fa-3x',
                 skills: [
                     <p key="1">Angular <span className="badge badge-primary">advanced</span></p>,
-                    <p key="1">Vue.js</p>,
+                    <p key="6">Vue.js</p>,
                     <p key="2">Bootstrap <span className="badge badge-primary">advanced</span></p>,
                     <p key="3">SASS/LESS</p>,
                     <p key="4">Webpack</p>,

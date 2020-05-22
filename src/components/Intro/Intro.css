@@ -109,14 +109,14 @@
 }
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
   .intro .k-intro {
     padding-left: 37px;
     font-size: 8px;
   }
 
   .intro .k-intro h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .intro .svg8 {
