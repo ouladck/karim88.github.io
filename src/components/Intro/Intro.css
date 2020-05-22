@@ -19,7 +19,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 .text-danger:hover {
-  color: rgba(182, 78, 56, 1) !important;
+  color: #F96167 !important;
 }
 .text-facebook:hover {
   color: #4267b2 !important;
@@ -28,7 +28,7 @@
   color: #0073b1 !important;
 }
 .text-github:hover {
-  color: #FFF !important;
+  color: #F7F7F9 !important;
 }
 
 .intro .svg8 {
@@ -63,7 +63,7 @@
   text-transform: uppercase;
   letter-spacing: 10px;
   font-weight: 300;
-  color: #fff;
+  color: #F7F7F9;
 }
 
 

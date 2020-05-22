@@ -33,7 +33,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #1D1B1BF1;
 }
 
 .copyleft-footer {
@@ -48,7 +48,7 @@
 }
 
 .fa-heart {
-    color: rgba(182, 78, 56, 1) !important;
+    color: #F96167 !important;
 }
 
 @media only screen and (max-width: 600px) {

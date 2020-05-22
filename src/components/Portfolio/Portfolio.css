@@ -7,12 +7,13 @@
     justify-content: center;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: rgba(182, 78, 56, 1);
+    background-color: #FCE77D;
     color: rgba(232, 232, 232, 1);
 }
 
 h2 {
     font-family: 'Abril Fatface', cursive;
+    color: #1D1B1B;
 }
 
 .portfolio .row {
@@ -33,9 +34,9 @@ h2 {
 
 .link-icon {
     display: none;
-    color: #507f7f !important;
+    color: #1D1B1B !important;
     vertical-align: middle;
-    border: 8px solid #507f7f;
+    border: 8px solid #1D1B1B;
     padding: 6px;
     border-radius: 50%;
     margin-top: 25%;
@@ -50,7 +51,7 @@ h2 {
     background-color: transparent;
 }
 .layer:hover {
-    background-color: #fff8;
+    background-color: #F7F7F98;
 }
 .layer:hover .link-icon {
     display: inline-block;
@@ -76,5 +77,5 @@ h2 {
     height: 0;
     border-left: 200px solid transparent;
     border-right: 0px solid transparent;
-    border-top: 100px solid #507f7f;
+    border-top: 100px solid #F96167;
 }

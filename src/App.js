@@ -22,7 +22,7 @@ class App extends Component {
     constructor () {
         super();
         this.name = 'Karim Oulad Chalha';
-        this.position = 'Angular developer';
+        this.position = 'Senior Web developer';
         this.email = 'ouladchalha.k@gmail.com';
         this.email_alt = 'contact@karimslab.com';
         this.tel = '+2126-4162-3527';
@@ -33,6 +33,14 @@ class App extends Component {
             "EXPERIENCED FULLSTACK DEVELOPER WITH A DEMONSTRATED HISTORY OF WORKING IN THE COMPUTER SOFTWARE INDUSTRY." +
             "SKILLED IN ANGULAR, LARAVEL, PYTHON.";
         this.experiences = [
+            {
+                id: 9,
+                position: 'Senior Web Developer',
+                company: 'CodeCave',
+                description: <span>Participating of the development of a cyber-security penetration testing platform called <a hrefh="https://www.buglab.io/">Buglab</a></span>,
+                time: 'Mar 2020 - Current',
+                icon: 'fas fa-briefcase fa-2x'
+            },
             {
                 id: 9,
                 position: 'Master\'s Degree Business Analytics et Big Data',
@@ -46,7 +54,7 @@ class App extends Component {
                 position: 'Lead Web Developer',
                 company: 'RC2K / Iliad Free',
                 description: <span>Developing an Incident Management System for <span className="text-secondary">Iliad Free.</span></span>,
-                time: 'Jan 2019 - Current',
+                time: 'Jan 2019 - Mar 2020',
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
@@ -113,6 +121,7 @@ class App extends Component {
                 icon: 'fas fa-laptop-code fa-3x',
                 skills: [
                     <p key="1">Angular <span className="badge badge-primary">advanced</span></p>,
+                    <p key="1">Vue.js</p>,
                     <p key="2">Bootstrap <span className="badge badge-primary">advanced</span></p>,
                     <p key="3">SASS/LESS</p>,
                     <p key="4">Webpack</p>,
@@ -142,7 +151,8 @@ class App extends Component {
                     <p key="2">Gnu/Linux <span className="badge badge-primary">advanced</span></p>,
                     <p key="3">SSH</p>,
                     <p key="4">GIT <span className="badge badge-primary">advanced</span></p>,
-                    <p key="5">Slack</p>
+                    <p key="5">Slack</p>,
+                    <p key="6">Subversion/SVN</p>
                 ]
             }
         ];

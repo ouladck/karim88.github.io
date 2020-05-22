@@ -7,8 +7,8 @@
     justify-content: center;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: rgba(182, 78, 56, 1);
-    color: rgba(232, 232, 232, 1);
+    background-color: #FCE77D;
+    color: #1D1B1B;
 }
 
 .timeline-container h2 {
@@ -18,13 +18,13 @@
 .timeline-container h3 {
     font-family: 'Abril Fatface', cursive;
     padding-bottom: 10px;
-    color: #507f7f;
+    color: #1D1B1B;
     font-weight: 400;
 }
 
 .timeline-container p {
     font-size: 1rem;
-    color: #050505;
+    color: #F7F7F9;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,7 +56,7 @@
     }*/
 
     .timeline-container .cd-timeline__date {
-        color: #050505 !important;
+        color: #F7F7F9 !important;
         font-size: 16px;
     }
 }
@@ -208,8 +208,8 @@ Vertical Timeline - by CodyHouse.co
 .cd-timeline__content {
     position: relative;
     margin-left: 60px;
-    background-color: rgba(232, 232, 232, 1);
-    color: rgba(182, 78, 56, 1);
+    background-color: #1D1B1B;
+    color: #F96167;
     border-radius: 0.25em;
     padding: 1em;
     -webkit-box-shadow: 0 3px 0 #d7e4ed;
@@ -232,15 +232,15 @@ Vertical Timeline - by CodyHouse.co
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid white;
+    border-right: 7px solid #1D1B1B;
 }
 
-.cd-timeline__content h2 {
-    color: rgba(22, 22, 22, 1);
+.cd-timeline__content h3 {
+    color: #FCE77D;
 }
 
 .cd-timeline__img i {
-    color: rgba(182, 78, 56, 1) !important;
+    color: #F96167 !important;
     padding: 14px;
 }
 
@@ -249,7 +249,7 @@ Vertical Timeline - by CodyHouse.co
 }
 
 .cd-timeline__date {
-    color: rgba(232, 232, 232, 1);
+    color: #1D1B1B;
 }
 
 .cd-timeline__content p {
@@ -268,7 +268,7 @@ Vertical Timeline - by CodyHouse.co
 }
 
 @media only screen and (min-width: 768px) {
-    .cd-timeline__content h2 {
+    .cd-timeline__content h3 {
         font-size: 2rem;
     }
 
@@ -295,7 +295,7 @@ Vertical Timeline - by CodyHouse.co
         top: 24px;
         left: 100%;
         border-color: transparent;
-        border-left-color: rgba(232, 232, 232, 1);
+        border-left-color: #1D1B1B;
     }
 
     .cd-timeline__date {
@@ -315,7 +315,7 @@ Vertical Timeline - by CodyHouse.co
         left: auto;
         right: 100%;
         border-color: transparent;
-        border-right-color: rgba(232, 232, 232, 1);
+        border-right-color: #1D1B1B;
     }
 
     .cd-timeline__block:nth-child(even) .cd-timeline__date {

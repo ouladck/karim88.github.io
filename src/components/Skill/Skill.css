@@ -7,8 +7,8 @@
     justify-content: center;
     letter-spacing: 1px;
     font-size: 16px;
-    color: #999;
-    background-color: rgba(232, 232, 232, 1);
+    color: #F7F7F9;
+    background-color: #1D1B1B;
 }
 
 .skills h2 {
@@ -19,7 +19,7 @@
 .skills .container h3 {
     font-family: 'Abril Fatface', cursive;
     padding-bottom: 15px;
-    color: #4d4d4d;
+    color: #FCE77D;
     font-size: 1.5rem;
 }
 
@@ -32,11 +32,11 @@
 }
 
 .skills .fab, .skills .fas {
-    color: #507f7f !important;
+    color: #1D1B1B !important;
     padding-bottom: 25px;
 }
 
 .skills .badge-primary {
-    background-color: #507f7f !important;
+    background-color: #F96167 !important;
     text-transform: uppercase;
 }
