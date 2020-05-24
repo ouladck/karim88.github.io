@@ -1,6 +1,7 @@
 {
   "name": "karimoc",
   "version": "2.1.0",
+  "homepage" : "https://karim88.github.io",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
