@@ -32,7 +32,7 @@ class Intro extends Component {
                         </a>
                     </div>
                     <div className="col-xs">
-                        <a href="https://cv.karimslab.com/pdf/karim_oulad_chalha_v4_6.pdf" rel="noopener noreferrer" target="_blank">
+                        <a href="https://cv.karimslab.com/pdf/karim_oulad_chalha_en_v6.pdf" rel="noopener noreferrer" target="_blank">
                             <i className="fas fa-file-pdf text-danger fa-3x wow jello"></i>
                         </a>
                     </div>
