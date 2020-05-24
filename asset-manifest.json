@@ -1,0 +1,22 @@
+{
+  "main.css": "/static/css/main.c34bcb15.chunk.css",
+  "main.js": "/static/js/main.2e90d7db.chunk.js",
+  "main.js.map": "/static/js/main.2e90d7db.chunk.js.map",
+  "static/js/1.a9c22585.chunk.js": "/static/js/1.a9c22585.chunk.js",
+  "static/js/1.a9c22585.chunk.js.map": "/static/js/1.a9c22585.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/intro-layer.svg": "/static/media/intro-layer.b27e3e07.svg",
+  "static/media/falak.png": "/static/media/falak.26c48255.png",
+  "static/media/mrcmaroc.png": "/static/media/mrcmaroc.cdf579ab.png",
+  "static/media/planksetting.gif": "/static/media/planksetting.1cbb7cae.gif",
+  "static/media/demo.gif": "/static/media/demo.6906543d.gif",
+  "static/media/Intro.css": "/static/media/desktop.e2f0fc35.jpg",
+  "static/media/WhoAmI.css": "/static/media/karim.0a796852.jpg",
+  "static/media/Footer.css": "/static/media/sale.d6b55fe5.jpg",
+  "static/media/zayousa.png": "/static/media/zayousa.7f9e9b15.png",
+  "static/css/main.c34bcb15.chunk.css.map": "/static/css/main.c34bcb15.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.99a367e5c3d84d929ac84329a765a940.js": "/precache-manifest.99a367e5c3d84d929ac84329a765a940.js",
+  "service-worker.js": "/service-worker.js"
+}
