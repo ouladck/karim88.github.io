@@ -15,6 +15,7 @@
     font-family: 'Abril Fatface', cursive;
     margin-top: 30px;
     padding-left: 10px;
+    color: #FCE77D;
 }
 
 .footer ul {
@@ -47,7 +48,7 @@
     letter-spacing: 3px;
 }
 
-.fa-heart {
+.fa-heart, a {
     color: #F96167 !important;
 }
 

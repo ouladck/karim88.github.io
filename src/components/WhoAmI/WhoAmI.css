@@ -11,6 +11,10 @@
     background-size: contain;
 }
 
+.who a {
+    color: #F7F7F9;
+}
+
 .who-text {
     padding: 80px;
     display: -webkit-flex;
