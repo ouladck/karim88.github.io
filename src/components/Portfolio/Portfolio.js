@@ -12,7 +12,7 @@ class Portfolio extends Component {
                     <div className="technologie-shape"/>
                     <div className="technologie wow zoomIn">{project.technologie}</div>
                     <div className="layer">
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <a href={project.link} aria-label={`link to ${project.link}`} target="_blank" rel="noopener noreferrer">
                             <i className="fas fa-link fa-3x link-icon"></i>
                         </a>
                     </div>

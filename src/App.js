@@ -29,16 +29,22 @@ class App extends Component {
         this.country = 'Morocco';
         this.country_link = 'https://en.wikipedia.org/wiki/Morocco';
         this.address = '41 Rue Laymoune, Hay Cheikh Lamfadel, 11020 Salé';
-        this.description = "I’M AN EAGER PROGRAMMER FROM MOROCCO, ARDENT ABOUT OPEN SOURCE AND THE NEW IT TECHNOLOGY." +
-            "EXPERIENCED FULLSTACK DEVELOPER WITH A DEMONSTRATED HISTORY OF WORKING IN THE COMPUTER SOFTWARE INDUSTRY." +
-            "SKILLED IN ANGULAR, LARAVEL, PYTHON.";
+        this.description = `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in 'Master Business Analytics and Big Data' from FST Settat.`;
         this.experiences = [
+            {
+                id: 11,
+                position: 'Technical Project Manager',
+                company: 'Gear9 - Groupe Thenext.Click',
+                description: <span>Participating in the development of many projects including <a href="https://www.inwi.ma/" aria-label="inwi website">inwi website</a></span>,
+                time: 'Aug 2020 - Current',
+                icon: 'fas fa-briefcase fa-2x'
+            },
             {
                 id: 10,
                 position: 'Senior Web Developer',
                 company: 'CodeCave',
-                description: <span>Participating of the development of a cyber-security penetration testing platform called <a hrefh="https://www.buglab.io/">Buglab</a></span>,
-                time: 'Mar 2020 - Current',
+                description: <span>Participating in the development of a cyber-security penetration testing platform called <a href="https://www.buglab.io/" aria-label="Buglab website">Buglab</a></span>,
+                time: 'Mar 2020 - Jul 2020',
                 icon: 'fas fa-briefcase fa-2x'
             },
             {
@@ -46,7 +52,7 @@ class App extends Component {
                 position: 'Master\'s Degree Business Analytics et Big Data',
                 company: 'FST Settat',
                 description: 'Faculté des Sciences et Techniques Settat',
-                time: 'Oct 2019 - Current',
+                time: 'Oct 2019 - 2020',
                 icon: 'fas fa-graduation-cap fa-2x'
             },
             {
@@ -121,7 +127,7 @@ class App extends Component {
                 icon: 'fas fa-laptop-code fa-3x',
                 skills: [
                     <p key="1">Angular <span className="badge badge-primary">advanced</span></p>,
-                    <p key="6">Vue.js</p>,
+                    <p key="6">Vue.js <span className="badge badge-primary">advanced</span></p>,
                     <p key="2">Bootstrap <span className="badge badge-primary">advanced</span></p>,
                     <p key="3">SASS/LESS</p>,
                     <p key="4">Webpack</p>,
@@ -148,8 +154,9 @@ class App extends Component {
                 icon: 'fas fa-wrench fa-3x',
                 skills: [
                     <p key="1">Trello <span className="badge badge-primary">advanced</span></p>,
+                    <p key="1">Jira</p>,
                     <p key="2">Gnu/Linux <span className="badge badge-primary">advanced</span></p>,
-                    <p key="3">SSH</p>,
+                    <p key="3">SSH <span className="badge badge-primary">advanced</span></p>,
                     <p key="4">GIT <span className="badge badge-primary">advanced</span></p>,
                     <p key="5">Slack</p>,
                     <p key="6">Subversion/SVN</p>

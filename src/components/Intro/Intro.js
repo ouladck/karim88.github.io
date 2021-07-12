@@ -22,7 +22,7 @@ class Intro extends Component {
                         </a>
                     </div>
                     <div className="col-xs">
-                        <a href="https://linkedin.com/in/karim88" rel="noopener noreferrer" target="_blank">
+                        <a href="https://linkedin.com/in/karim88" aria-label="" rel="noopener noreferrer" target="_blank">
                             <i className="fab fa-linkedin text-linkedin fa-3x wow jello"></i>
                         </a>
                     </div>

@@ -16,7 +16,7 @@ class WhoAmI extends Component {
                         </p>
                         <p className="wow slideInRight">
                             <span className="text-primary">Email: </span>
-                            <a href="mailto://karim@karimoc.me">{this.props.email}</a>
+                            {this.props.email}
                         </p>
                         <p className="wow slideInRight">
                             <span className="text-primary">Mobile: </span>

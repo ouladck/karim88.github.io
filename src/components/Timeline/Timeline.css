@@ -11,6 +11,10 @@
     color: #1D1B1B;
 }
 
+.timeline-container a {
+    color: #FCE77D;
+}
+
 .timeline-container h2 {
     font-family: 'Abril Fatface', cursive;
 }
