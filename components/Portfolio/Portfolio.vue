@@ -1,22 +1,36 @@
 <template>
   <div class="portfolio">
     <h2>{{ name }}</h2>
-    <div class="row">
-      <div v-for="(project, key) of projects" :key="key" class="col-md-3 col-lg-4">
-        <div class="card-img" :style="{
+    <v-row>
+      <v-col v-for="(project, key) of projects" :key="key" cols="12" md="3" lg="4">
+        <div v-if="!project.isVideo" class="card-img" :style="{
              backgroundImage: `url(${project.image})`,
              backgroundPosition: 'center'
         }">
-        <div class="technologie-shape"/>
-        <div class="technologie wow zoomIn">{{ project.technologie }}</div>
-        <div class="layer">
-          <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
-            <v-icon class="link-icon" large>fas fa-link</v-icon>
-          </a>
+          <div class="technologie-shape"/>
+          <div class="technologie wow zoomIn">{{ project.technologie }}</div>
+          <div class="layer">
+            <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
+              <v-icon class="link-icon" large>fas fa-link</v-icon>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    </div>
+        <div v-else class="card-img">
+          <video autoplay loop muted class="card-video" >
+            <source :src="project.image"
+                    type="video/mp4">
+
+          </video>
+          <div class="technologie-shape"/>
+          <div class="technologie wow zoomIn">{{ project.technologie }}</div>
+          <div class="layer">
+            <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
+              <v-icon class="link-icon" large>fas fa-link</v-icon>
+            </a>
+          </div>
+        </div>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -52,6 +66,8 @@ export default {
   h2 {
     font-family: 'Abril Fatface', cursive;
     color: #1D1B1B;
+    text-align: center;
+    font-size: 30px;
   }
 
   .row {
@@ -62,15 +78,22 @@ export default {
 
 .card-img {
   position: relative;
-  background-image: url('https://picsum.photos/500/400?random');
+  background-image: url('/images/portfolio-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
   padding: 20px;
   margin-bottom: 20px;
   height: 300px;
+  width: 100%;
 }
-
+.card-video {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  height: 100%;
+  max-width: 100%;
+}
 
 
 .layer {
@@ -80,6 +103,9 @@ export default {
   left: 0;
   top: 0;
   background-color: transparent;
+  text-align: center;
+  align-items: center;
+  display: grid;
   a {
     .link-icon {
       display: none;
@@ -88,7 +114,7 @@ export default {
       border: 8px solid #1D1B1B;
       padding: 6px;
       border-radius: 50%;
-      margin-top: 25%;
+      margin: auto;
     }
   }
   &:hover {

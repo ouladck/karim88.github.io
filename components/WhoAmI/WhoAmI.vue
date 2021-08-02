@@ -1,32 +1,30 @@
 <template>
-  <div class="who" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
-    <div class="row">
-      <div class="col-md-4 who-img">
-
-      </div>
-      <div class="col-md who-text">
+  <div class="who">
+    <v-row>
+      <v-col md="4" class="who-img" :style="{backgroundImage: `url(${backgroundImg}) !important;`}"></v-col>
+      <v-col  class="who-text">
         <p class="wow slideInRight">
           <span class="text-primary">Name: </span>
-          {this.props.name}
+          {{ name }}
         </p>
         <p class="wow slideInRight">
           <span class="text-primary">Email: </span>
-          {this.props.email}
+          {{ email }}
         </p>
         <p class="wow slideInRight">
           <span class="text-primary">Mobile: </span>
-          {this.props.tel}
+          {{ tel }}
         </p>
         <p class="wow slideInRight">
           <span class="text-primary">Address: </span>
-          {this.props.address}
+          {{ address }}
         </p>
         <hr />
         <p class="text-muted wow slideInRight">
-          {this.props.description}
+          {{ description }}
         </p>
-      </div>
-    </div>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -90,6 +88,9 @@ export default {
   letter-spacing: 3px;
   font-size: 16px;
   font-weight: normal;
+  .text-muted {
+    text-transform: uppercase;
+  }
 }
 
 .who .text-primary {

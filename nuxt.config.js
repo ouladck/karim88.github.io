@@ -3,12 +3,19 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - karimslab',
-    title: 'karimslab',
+    titleTemplate: '%s - KARIM OULAD CHALHA',
+    title: 'KARIM OULAD CHALHA',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1' },
+      { hid: 'description', name: 'description', content: `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in \`Master Business Analytics and Big Data\` from FST Settat.` },
+      { hid: 'robots', name: 'robots', content: 'follow, index' },
+      { hid: 'og:title', name: 'og:title', content: 'KARIM OULAD CHALHA - Technical Project Manager' },
+      { hid: 'og:image', name: 'og:image', content: 'img/me.jpg' },
+      { hid: 'og:description', name: 'og:description', content: `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in \`Master Business Analytics and Big Data\` from FST Settat.` },
+      { hid: 'robots', name: 'robots', content: 'follow, index' },
+      { hid: 'author', name: 'author', content: 'Karim Oulad Chalha <ouladchalha.k@gmail.com>' },
+      { hid: 'keyword', name: 'keyword', content: 'fullstack, full-stack, odoo, web, developer, karim, oulad, chalha, oulad chalha, karim oulad chalha, maroc, rabat, fullstack developer, web developer, devextreme, python, typescript, angular, jquery, laravel, mongodb, morocco, linux, applications, nodejs, es6, coffeescript, backend, frontend, ssh, vuejs' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

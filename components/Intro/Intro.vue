@@ -7,28 +7,13 @@
                 <p class="text-muted wow flash">{{ position }}</p>
             </div>
             <img :src="introLayer" class="svg8" alt="logo" />
-            <div class="row k-social">
-                <div class="col-xs">
-                    <a href="https://github.com/karim88" rel="noopener noreferrer" target="_blank">
-                        <v-icon class="text-github" large>fab fa-github</v-icon>
-                    </a>
-                </div>
-                <div class="col-xs">
-                    <a href="https://linkedin.com/in/karim88" aria-label="" rel="noopener noreferrer" target="_blank">
-                        <v-icon class="text-linkedin" large>fab fa-linkedin</v-icon>
-                    </a>
-                </div>
-                <div class="col-xs">
-                    <a href="https://fb.com/herr.linux88" rel="noopener noreferrer" target="_blank">
-                        <v-icon class="text-facebook" large>fab fa-facebook</v-icon>
-                    </a>
-                </div>
-                <div class="col-xs">
-                    <a href="https://cv.karimslab.com/pdf/karim_oulad_chalha_en_6.pdf" rel="noopener noreferrer" target="_blank">
-                        <v-icon class="text-danger" large>fas fa-file-pdf</v-icon>
-                    </a>
-                </div>
-            </div>
+            <v-row align="end" class="k-social">
+                <v-col v-for="(sn, i) of socialNetwork" :key="i">
+                  <a :href="sn.link" rel="noopener noreferrer" target="_blank">
+                    <v-icon dark :class="sn.className" large>{{ sn.icon }}</v-icon>
+                  </a>
+                </v-col>
+            </v-row>
 
         </div>
     </div>
@@ -57,6 +42,10 @@ export default {
     introLayer: {
       type: String,
       default: ''
+    },
+    socialNetwork: {
+      type: Array,
+      default: () => []
     }
   }
 }
@@ -115,6 +104,10 @@ export default {
         padding-right: 152px;
         padding-bottom: 110px;
         z-index: 3;
+        a {
+          text-decoration: none;
+          color: #F7F7F9;
+        }
     }
     .logo {
         position: absolute;
@@ -133,10 +126,8 @@ export default {
     color: #0073b1 !important;
 }
 .text-github:hover {
-    color: #F7F7F9 !important;
+    color: #1D1B1B !important;
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .intro{

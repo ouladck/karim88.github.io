@@ -19,7 +19,7 @@
             <h4 class="company">
               {{ experience.company }}
             </h4>
-            <p>{{ experience.description }}</p>
+            <p v-html="experience.description"></p>
             <span class="cd-timeline__date">{{ experience.time }}</span>
           </div>
         </div>
@@ -57,18 +57,24 @@ export default {
   font-size: 16px;
   background-color: #FCE77D;
   color: #1D1B1B;
+
   a {
     color: #FCE77D;
   }
+
   h2 {
     font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 30px;
   }
+
   h3 {
     font-family: 'Abril Fatface', cursive;
     padding-bottom: 10px;
     color: #1D1B1B;
     font-weight: 400;
   }
+
   p {
     font-size: 1rem;
     color: #F7F7F9;
@@ -231,8 +237,7 @@ Vertical Timeline - by CodyHouse.co
 }
 
 .cd-timeline__img.cd-timeline__img--picture {
-  background-color: rgba(232, 232, 232, 1);
-;
+  background-color: rgba(232, 232, 232, 1);;
 }
 
 @media only screen and (min-width: 1170px) {
