@@ -1,22 +1,22 @@
 <template>
-    <div class="intro" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
-        <img class="logo" :src="logo" alt="Logo"/>
-        <div class="overlayer">
-            <div class="k-intro">
-                <h1 class="wow flipInX">{{ name }}</h1>
-                <p class="text-muted wow flash">{{ position }}</p>
-            </div>
-            <img :src="introLayer" class="svg8" alt="logo" />
-            <v-row align="end" class="k-social">
-                <v-col v-for="(sn, i) of socialNetwork" :key="i">
-                  <a :href="sn.link" rel="noopener noreferrer" target="_blank">
-                    <v-icon dark :class="sn.className" large>{{ sn.icon }}</v-icon>
-                  </a>
-                </v-col>
-            </v-row>
+  <div class="intro" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
+    <img class="logo" :src="logo" alt="Logo"/>
+    <div class="overlayer">
+      <div class="k-intro">
+        <h1 class="wow flipInX">{{ name }}</h1>
+        <p class="text-muted wow flash">{{ position }}</p>
+      </div>
+      <img :src="introLayer" class="svg8" alt="logo"/>
+      <v-row align="end" class="k-social">
+        <v-col v-for="(sn, i) of socialNetwork" cols="12" md="3" :key="i">
+          <a :href="sn.link" rel="noopener noreferrer" target="_blank">
+            <v-icon dark :class="sn.className" large>{{ sn.icon }}</v-icon>
+          </a>
+        </v-col>
+      </v-row>
 
-        </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -53,130 +53,165 @@ export default {
 
 <style scoped lang="scss">
 .intro {
-    position: relative;
-    font-family: 'Abril Fatface', cursive;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    height: 100vh;
+  position: relative;
+  font-family: 'Abril Fatface', cursive;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  .overlayer {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    .overlayer {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        .k-intro {
-            z-index: 4;
-            color: rgba(232, 232, 232, 1);
-            position: absolute;
-            top: 40%;
-            bottom: 60%;
-            padding-left: 352px;
-        }
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .k-intro {
+      z-index: 4;
+      color: rgba(232, 232, 232, 1);
+      position: absolute;
+      top: 40%;
+      bottom: 60%;
+      padding-left: 352px;
     }
-    .svg8 {
-        position: absolute;
-        z-index: 2;
-        bottom: 0;
-        left: 0;
-        width: 50%;
+  }
+
+  .svg8 {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 300;
+    color: #F7F7F9;
+  }
+
+  p {
+    font-size: 1.6rem;
+    letter-spacing: 10px;
+    font-weight: 900;
+    text-align: left;
+  }
+
+  .k-social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 152px;
+    padding-bottom: 110px;
+    z-index: 3;
+
+    a {
+      text-decoration: none;
+      color: #F7F7F9;
     }
-    h1 {
-        text-align: left;
-        font-size: 4em;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-weight: 300;
-        color: #F7F7F9;
-    }
-    p {
-        font-size: 1.6rem;
-        letter-spacing: 10px;
-        font-weight: 900;
-        text-align: left;
-    }
-    .k-social {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding-right: 152px;
-        padding-bottom: 110px;
-        z-index: 3;
-        a {
-          text-decoration: none;
-          color: #F7F7F9;
-        }
-    }
-    .logo {
-        position: absolute;
-        z-index: 2;
-        top: 10px;
-        left: 10px;
-    }
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+  }
 }
+
 .text-danger:hover {
-    color: #F96167 !important;
+  color: #F96167 !important;
 }
+
 .text-facebook:hover {
-    color: #4267b2 !important;
+  color: #4267b2 !important;
 }
+
 .text-linkedin:hover {
-    color: #0073b1 !important;
+  color: #0073b1 !important;
 }
+
 .text-github:hover {
-    color: #1D1B1B !important;
+  color: #1D1B1B !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .intro{
-        .k-intro {
-            padding-left: 47px;
-            font-size: 8px;
+  .intro {
+    .overlayer {
+      .k-intro {
+        padding-left: 47px;
+        font-size: 8px;
+        top: 30%;
+        h1 {
+          font-size: 3em;
         }
-        .svg8 {
-            width: 100%;
+        p {
+          font-size: 18px;
         }
-        .k-social {
-            padding-right: 30px;
-            padding-bottom: 40%;
-        }
-        .k-social a {
-            padding-left: 10px;
-        }
-        .fa-3x {
-            font-size: 2em;
-            padding-right: 0;
-        }
+      }
     }
+
+    .svg8 {
+      width: 100%;
+    }
+
+    .k-social {
+      left: 0;
+      padding-bottom: 10px;
+    }
+
+    .k-social a {
+      padding-left: 10px;
+      color: #1D1B1B;
+    }
+
+    .fas, .fab {
+      font-size: 30px !important;
+      padding-right: 0;
+      color: #1D1B1B !important;
+    }
+  }
 }
 
 
 @media only screen and (max-width: 360px) {
-    .intro {
-        .k-intro {
-          padding-left: 37px;
-          font-size: 8px;
-          top: 20%;
-        }
-        .k-intro h1 {
-            font-size: 3rem;
-        }
-        .svg8 {
-            width: 100%;
-        }
-        .k-social {
-            padding-right: 30px;
-            padding-bottom: 40%;
-            a {
-                padding-left: 10px;
-            }
-        }
-        .fa-3x {
-            font-size: 2em;
-            padding-right: 0;
-        }
+  .intro {
+    .overlayer {
+      .k-intro {
+        padding-left: 37px;
+        font-size: 8px;
+        top: 25%;
+      }
     }
+
+    .k-intro h1 {
+      font-size: 3rem;
+    }
+
+    .svg8 {
+      width: 100%;
+    }
+
+    .k-social {
+      left: 0;
+      padding-bottom: 10px;
+
+      a {
+        padding-left: 10px;
+        color: #1D1B1B;
+      }
+    }
+    .fas, .fab {
+      font-size: 30px !important;
+      padding-right: 0;
+      color: #1D1B1B !important;
+    }
+  }
 }
 </style>

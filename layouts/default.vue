@@ -45,6 +45,9 @@ html, body {
   color: #999;
   overflow-x: hidden;
 }
+body {
+  overflow: hidden;
+}
 blockquote {
   font-family: 'Dancing Script', cursive;
 }

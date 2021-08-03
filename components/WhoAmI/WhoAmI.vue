@@ -104,5 +104,8 @@ export default {
   .who .text-primary {
     width: auto !important;
   }
+  .who-img {
+    display: none;
+  }
 }
 </style>

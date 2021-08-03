@@ -6,29 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Intro/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Intro/Intro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NuxtLogo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/Portfolio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Portfolio/Portfolio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/demo-5x5.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/demo-5x5.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/demo-planksetting.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/demo-planksetting.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/demo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/demo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/falak.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/falak.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/mrcmaroc.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/mrcmaroc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/planksetting.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/planksetting.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Portfolio/images/zayousa.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/portfolio/zayousa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Skill/Skill.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Skill/Skill.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Timeline/Timeline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Timeline/Timeline.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Tutorial.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VuetifyLogo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/inspire.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inspire.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/vuetify-logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +196,9 @@
       <workItem from="1548713839432" duration="42000" />
       <workItem from="1559947967769" duration="1339000" />
       <workItem from="1627782717583" duration="10099000" />
-      <workItem from="1627836885215" duration="9045000" />
+      <workItem from="1627836885215" duration="13235000" />
+      <workItem from="1627892449077" duration="15000" />
+      <workItem from="1627939345334" duration="4870000" />
     </task>
     <servers />
   </component>
