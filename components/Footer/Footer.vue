@@ -1,17 +1,17 @@
 <template>
   <div class="footer" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
     <div class="overlayer">
-      <div class="row justify-content-end">
-        <div class="col-md-4">
+      <v-row align="end">
+        <v-col cols="12" md="6">
           <h2 class="">Contacts</h2>
           <ul>
-            <li class=" wow zoomIn"><v-icon large>fas fa-phone</v-icon> {{ tel }}</li>
-            <li class=" wow zoomIn"><v-icon large>fas fa-at</v-icon> {{ email }}</li>
+            <li class=" wow zoomIn"><v-icon small>fas fa-phone</v-icon> {{ tel }}</li>
+            <li class=" wow zoomIn"><v-icon small>fas fa-at</v-icon> {{ email }}</li>
           </ul>
-        </div>
-      </div>
+        </v-col>
+      </v-row>
       <div class="copyleft-footer wow slideInUp">
-        <p>Made with <v-icon class="wow pulse infinite" large>fas fa-heart</v-icon> From <a :href="countryLink">{{ country }}</a></p>
+        <p>Made with <v-icon class="wow pulse infinite">fas fa-heart</v-icon> From <a :href="countryLink">{{ country }}</a></p>
       </div>
     </div>
   </div>
@@ -84,8 +84,11 @@ export default {
       padding-left: 60px;
       bottom: 0;
       font-size: 16px;
-      text-align: left;
+      text-align: right;
       letter-spacing: 3px;
+      p {
+        padding-right: 20px;
+      }
     }
   }
 }
@@ -105,6 +108,7 @@ export default {
       }
       .copyleft-footer {
         padding-left: 10px;
+        bottom: -77px;
       }
     }
   }
