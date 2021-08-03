@@ -20,6 +20,12 @@
               {{ experience.company }}
             </h4>
             <p v-html="experience.description"></p>
+            <span v-for="(company, i) of experience.companies" :key="i" class="companies">
+              <a v-if="company.hasOwnProperty('url')" :href="company.url" aria-label="company logo" target="_blank">
+                <img :src="company.image" :alt="company.alt" :title="company.alt" height="30">
+              </a>
+              <img v-else :src="company.image" :alt="company.alt" height="30">
+            </span>
             <span class="cd-timeline__date">{{ experience.time }}</span>
           </div>
         </div>
@@ -46,6 +52,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .timeline-container {
   padding: 80px;
   display: -webkit-flex;
@@ -58,9 +65,7 @@ export default {
   background-color: #FCE77D;
   color: #1D1B1B;
 
-  a {
-    color: #FCE77D;
-  }
+
 
   h2 {
     font-family: 'Abril Fatface', cursive;
@@ -78,6 +83,19 @@ export default {
   p {
     font-size: 1rem;
     color: #F7F7F9;
+    &::v-deep a  {
+      color: #FCE77D !important;
+    }
+  }
+  .companies {
+    display: inline;
+    img {
+      max-width: 60px;
+      margin: 5px;
+      background-color: #F7F7F9;
+      padding: 2px;
+      border-radius: 2px;
+    }
   }
 }
 

@@ -39,7 +39,13 @@ export default {
           description: `<span>Participating in the development of many projects including <a href="https://www.inwi.ma/"
                                                                                             aria-label="inwi website">inwi website</a></span>`,
           time: 'Aug 2020 - Current',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/inwi.svg`, alt: `inwi`, url: `https://inwi.ma` },
+            { image: `images/companies/pmi.png`, alt: `Philip Morris International` },
+            { image: `images/companies/sg.png`, alt: `Soglease & La Marocaine Vie` },
+            { image: `images/companies/aivam.svg`, alt: `AIVAM` },
+          ]
         },
         {
           id: 10,
@@ -48,7 +54,10 @@ export default {
           description: `<span>Participating in the development of a cyber-security penetration testing platform called <a
             href="https://www.buglab.io/" aria-label="Buglab website">Buglab</a></span>`,
           time: 'Mar 2020 - Jul 2020',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/buglab.png`, alt: `Buglab` }
+          ]
         },
         {
           id: 9,
@@ -65,7 +74,10 @@ export default {
           description: `<span>Developing an Incident Management System for <span
             class="text-secondary">Iliad Free.</span></span>`,
           time: 'Jan 2019 - Mar 2020',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/free.png`, alt: `Iliad Free Telecom` }
+          ]
         },
         {
           id: 1,
@@ -82,7 +94,10 @@ export default {
           description: `<span>Developing an Agricultural Information Management System for <span
             class="text-secondary">Cosumar Group</span>.</span>`,
           time: 'May 2018 - Aug 2018',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/cosumar.jpg`, alt: `Cosumar (Project Attaysir)'` }
+          ]
         },
         {
           id: 3,
@@ -90,7 +105,10 @@ export default {
           company: 'Graviton Geolocation',
           description: `Integrated Odoo ERP to be used for internal usage & Developed/Maintained a existing Agricultural Information Management System.`,
           time: 'Jan 2018 - May 2018',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/cosumar.jpg`, alt: `Cosumar` }
+          ]
         },
         {
           id: 4,
@@ -107,7 +125,10 @@ export default {
           description: `<span>Development of a CRM platform for Gas and Electricity distributors for the gas provider company <span
             class="text-secondary">Gazprom Energy France</span>.</span>`,
           time: 'Apr 2016 - Jul 2017',
-          icon: 'fas fa-briefcase fa-2x'
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/gazprom.svg`, alt: `Gazprom France` }
+          ]
         },
         {
           id: 6,

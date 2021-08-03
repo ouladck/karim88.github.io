@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Timeline/Timeline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Timeline/Timeline.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylelint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/stylelint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +202,8 @@
       <workItem from="1627836885215" duration="13235000" />
       <workItem from="1627892449077" duration="15000" />
       <workItem from="1627939345334" duration="7700000" />
+      <workItem from="1627981691669" duration="141000" />
+      <workItem from="1628027500666" duration="5988000" />
     </task>
     <servers />
   </component>
