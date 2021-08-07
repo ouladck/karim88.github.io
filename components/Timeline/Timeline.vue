@@ -132,7 +132,15 @@ export default {
     font-size: 16px;
   }
 }
-
+@media only screen and (min-width: 601px) and (max-width: 1169px) {
+  .cd-timeline__img {
+    i {
+      color: #F96167 !important;
+      padding: 7px 6px !important;
+      font-size: 26px;
+    }
+  }
+}
 /* --------------------------------
 Primary style
 -------------------------------- */
