@@ -1,0 +1,30 @@
+[
+  {
+    "name": "cosumar",
+    "path": "/cosumar",
+    "component": "/home/karim/Devel/karimslab/pages/cosumar.vue",
+    "chunkName": "pages/cosumar",
+    "_name": "_29e75a62"
+  },
+  {
+    "name": "index.stories",
+    "path": "/index.stories",
+    "component": "/home/karim/Devel/karimslab/pages/index.stories.js",
+    "chunkName": "pages/index.stories",
+    "_name": "_117ca34e"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/home/karim/Devel/karimslab/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_9529144e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/karim/Devel/karimslab/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2ef09d91"
+  }
+]

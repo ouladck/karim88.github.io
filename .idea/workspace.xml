@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins/vue-tooltip.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Timeline/Timeline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Timeline/Timeline.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,7 +63,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="v2021" />
-                    <option name="lastUsedInstant" value="1628373747" />
+                    <option name="lastUsedInstant" value="1628374392" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="storybook" />
