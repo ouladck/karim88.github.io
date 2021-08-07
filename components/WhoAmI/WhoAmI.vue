@@ -78,7 +78,7 @@ export default {
 }
 
 .who-text {
-  padding: 80px;
+  padding: 80px 80px 25px;
   display: -webkit-flex;
   display: flex;
   text-align: left;

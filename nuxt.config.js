@@ -83,6 +83,22 @@ export default {
     }
   },
 
+  storybook: {
+    addons: [
+      '@storybook/addon-controls',
+      '@storybook/addon-notes',
+      {
+        name: '@storybook/preset-scss',
+        options: {
+          cssLoaderOptions: {
+            modules: true,
+            localIdentName: '[name]__[local]--[hash:base64:5]',
+          }
+        }
+      }
+    ],
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
