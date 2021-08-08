@@ -4,14 +4,15 @@
 
     <section class="cd-timeline js-cd-timeline">
       <div class="cd-timeline__container">
-        <div v-for="(experience, index) of timeline" :key="index" class="cd-timeline__block js-cd-block">
+        <div v-for="(experience, index) of timeline" :key="index" :data-aos="index % 2 === 0 ? `fade-right` : `fade-left`"
+             class="cd-timeline__block js-cd-block">
           <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
             <i :class="experience.icon"></i>
           </div>
 
           <div :class="(experience.id % 2 === 0) ?
-          'cd-timeline__content js-cd-content  wow slideInRight'
-          : 'cd-timeline__content js-cd-content  wow slideInLeft'
+          'cd-timeline__content js-cd-content'
+          : 'cd-timeline__content js-cd-content'
           ">
             <h3 class="position">
               {{ experience.position }}

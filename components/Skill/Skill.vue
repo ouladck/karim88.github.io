@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="text-center">{{ name }}</h2>
       <div class="row">
-        <div v-for="(skill, index) of skills" :key="index" :class="`col-md-${(12 / Number(skills.length))} wow slideInRight`">
+        <div v-for="(skill, index) of skills" :key="index" :class="`col-md-${(12 / Number(skills.length))}`" data-aos="flip-right">
           <i :class="skill.icon"></i>
           <h3>{{ skill.name }}</h3>
             <p v-for="(tech, i) of skill.skills" :key="i">{{ tech.name }} <span v-if="tech.advanced" class="badge badge-primary">advanced</span></p>

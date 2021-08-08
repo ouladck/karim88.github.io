@@ -5,12 +5,12 @@
         <v-col cols="12" md="6">
           <h2 class="">Contacts</h2>
           <ul>
-            <li class=" wow zoomIn"><v-icon small>fas fa-phone</v-icon> {{ tel }}</li>
-            <li class=" wow zoomIn"><v-icon small>fas fa-at</v-icon> {{ email }}</li>
+            <li><v-icon small>fas fa-phone</v-icon> {{ tel }}</li>
+            <li><v-icon small>fas fa-at</v-icon> {{ email }}</li>
           </ul>
         </v-col>
       </v-row>
-      <div class="copyleft-footer wow slideInUp">
+      <div class="copyleft-footer">
         <p>Made with <v-icon class="wow pulse infinite">fas fa-heart</v-icon> From <a :href="countryLink">{{ country }}</a></p>
       </div>
     </div>

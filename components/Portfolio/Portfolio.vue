@@ -2,12 +2,13 @@
   <div class="portfolio">
     <h2>{{ name }}</h2>
     <v-row>
-      <v-col v-for="(project, key) of projects" :key="key" cols="12" md="3" lg="4">
+      <v-col v-for="(project, key) of projects" :key="key" :data-aos="key % 2 === 0 ? `fade-up-right` : `fade-up-left`"
+             cols="12" md="3" lg="4">
         <div v-if="!project.isVideo" class="card-img"  :lazy-background="project.image" :style="{
              backgroundPosition: 'center'
         }">
           <div class="technologie-shape"/>
-          <div class="technologie wow zoomIn">{{ project.technologie }}</div>
+          <div class="technologi">{{ project.technologie }}</div>
           <div class="layer">
             <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
               <v-icon class="link-icon" large>fas fa-link</v-icon>
@@ -21,7 +22,7 @@
 
           </video>
           <div class="technologie-shape"/>
-          <div class="technologie wow zoomIn">{{ project.technologie }}</div>
+          <div class="technologie">{{ project.technologie }}</div>
           <div class="layer">
             <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
               <v-icon class="link-icon" large>fas fa-link</v-icon>

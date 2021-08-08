@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins/aos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Footer/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Intro/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Intro/Intro.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Portfolio/Portfolio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Portfolio/Portfolio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Skill/Skill.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Skill/Skill.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Timeline/Timeline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Timeline/Timeline.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/WhoAmI/WhoAmI.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />

@@ -3,24 +3,24 @@
     <v-row>
       <v-col md="4" class="who-img" :lazy-background="backgroundImg"></v-col>
       <v-col  class="who-text">
-        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
+        <p data-aos="fade-left">
           <span class="text-primary">Name: </span>
           {{ name }}
         </p>
-        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
+        <p data-aos="fade-left">
           <span class="text-primary">Email: </span>
           {{ email }}
         </p>
-        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
+        <p data-aos="fade-left">
           <span class="text-primary">Mobile: </span>
           {{ tel }}
         </p>
-        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
+        <p data-aos="fade-left">
           <span class="text-primary">Address: </span>
           {{ address }}
         </p>
         <hr />
-        <p v-gsap.from="{ opacity: 0, x: -120, duration: 1 }" class="text-muted">
+        <p class="text-muted" data-aos="fade-left">
           {{ description }}
         </p>
       </v-col>
