@@ -3,8 +3,7 @@
     <h2>{{ name }}</h2>
     <v-row>
       <v-col v-for="(project, key) of projects" :key="key" cols="12" md="3" lg="4">
-        <div v-if="!project.isVideo" class="card-img" :style="{
-             backgroundImage: `url(${project.image})`,
+        <div v-if="!project.isVideo" class="card-img"  :lazy-background="project.image" :style="{
              backgroundPosition: 'center'
         }">
           <div class="technologie-shape"/>
@@ -16,7 +15,7 @@
           </div>
         </div>
         <div v-else class="card-img">
-          <video autoplay loop muted class="card-video" >
+          <video autoplay loop muted class="card-video" v-lazy-load>
             <source :src="project.image"
                     type="video/mp4">
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
+  <div class="footer" :lazy-background="backgroundImg">
     <div class="overlayer">
       <v-row align="end">
         <v-col cols="12" md="6">

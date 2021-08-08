@@ -1,16 +1,16 @@
 <template>
-  <div class="intro" :style="{backgroundImage: `url(${backgroundImg}) !important;`}">
-    <img class="logo" :src="logo" alt="Logo"/>
+  <div ref="intro" class="intro" :lazy-background="backgroundImg">
+    <img class="logo" :src="logo" alt="Logo" v-lazy-load />
     <div class="overlayer">
       <div class="k-intro">
-        <h1 class="wow flipInX">{{ name }}</h1>
-        <p class="text-muted wow flash">{{ position }}</p>
+        <h1>{{ name }}</h1>
+        <p class="text-muted">{{ position }}</p>
       </div>
-      <img :src="introLayer" class="svg8" alt="logo"/>
+      <img :src="introLayer" class="svg8" alt="logo"  v-lazy-load/>
       <v-row align="end" class="k-social">
-        <v-col v-for="(sn, i) of socialNetwork" cols="12" md="3" :key="i">
+        <v-col v-for="(sn, i) of socialNetwork" class="timeline" cols="12" md="3" :key="i">
           <a :href="sn.link" rel="noopener noreferrer" target="_blank">
-            <v-icon dark :class="sn.className" large>{{ sn.icon }}</v-icon>
+            <v-icon dark :class="`${sn.className} icon-${i}`" large>{{ sn.icon }}</v-icon>
           </a>
         </v-col>
       </v-row>
@@ -46,6 +46,20 @@ export default {
     socialNetwork: {
       type: Array,
       default: () => []
+    }
+  },
+  mounted() {
+    this.timeline()
+  },
+  methods: {
+    timeline () {
+      const gsap = this.$gsap.timeline({ repeat: 0 });
+      gsap.from(`.logo`, { opacity: 0, y: -100, duration: 1 });
+      gsap.from(`h1`, { opacity: 0, x: 100, duration: .5 });
+      gsap.from(`.intro .text-muted`, { opacity: 0, x: 100, duration: .5 });
+      for (let i = 0; i < this.socialNetwork.length; i++) {
+        gsap.from(`.icon-${i}`, { opacity: 0, x: 100, duration: .3 });
+      }
     }
   }
 }

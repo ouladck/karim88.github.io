@@ -1,26 +1,26 @@
 <template>
-  <div class="who">
+  <div ref="who" class="who">
     <v-row>
-      <v-col md="4" class="who-img" :style="{backgroundImage: `url(${backgroundImg}) !important;`}"></v-col>
+      <v-col md="4" class="who-img" :lazy-background="backgroundImg"></v-col>
       <v-col  class="who-text">
-        <p class="wow slideInRight">
+        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
           <span class="text-primary">Name: </span>
           {{ name }}
         </p>
-        <p class="wow slideInRight">
+        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
           <span class="text-primary">Email: </span>
           {{ email }}
         </p>
-        <p class="wow slideInRight">
+        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
           <span class="text-primary">Mobile: </span>
           {{ tel }}
         </p>
-        <p class="wow slideInRight">
+        <p v-gsap.from="{ opacity: 0, x: 120, duration: 1 }">
           <span class="text-primary">Address: </span>
           {{ address }}
         </p>
         <hr />
-        <p class="text-muted wow slideInRight">
+        <p v-gsap.from="{ opacity: 0, x: -120, duration: 1 }" class="text-muted">
           {{ description }}
         </p>
       </v-col>

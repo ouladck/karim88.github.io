@@ -22,9 +22,9 @@
             <p v-html="experience.description"></p>
             <span v-for="(company, i) of experience.companies" :key="i" class="companies">
               <a v-if="company.hasOwnProperty('url')" :href="company.url" aria-label="company logo" target="_blank">
-                <img v-tooltip="company.alt" :src="company.image" :alt="company.alt" :title="company.alt" height="30">
+                <img v-tooltip="company.alt" :src="company.image" :alt="company.alt" :title="company.alt" height="30" v-lazy-load>
               </a>
-              <img v-else :src="company.image" :alt="company.alt" height="30" v-tooltip="company.alt">
+              <img v-else :src="company.image" :alt="company.alt" height="30" v-tooltip="company.alt" v-lazy-load>
             </span>
             <span class="cd-timeline__date">{{ experience.time }}</span>
           </div>

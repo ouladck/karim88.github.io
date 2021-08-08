@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="trigger">
     <Nuxt/>
   </div>
 </template>
@@ -29,6 +29,28 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const {trigger, intro, who} = this.$refs
+      const gsap = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger,
+          start: 'top center',
+          end: 'bottom center',
+          markers: true,
+          scrub: true,
+        }
+      })
+      gsap.to(intro, {
+        x: -200,
+        duration: 3
+      }).reverse()
+      gsap.to(who, {
+        x: -200,
+        duration: 3
+      }).reverse()
+    })
   }
 }
 </script>
