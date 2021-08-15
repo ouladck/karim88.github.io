@@ -1,12 +1,12 @@
 <template>
   <div ref="intro" class="intro" :lazy-background="backgroundImg">
-    <img class="logo" :src="logo" alt="Logo" v-lazy-load />
+    <img class="logo" :src="logo" alt="Logo" title="Logo" v-lazy-load />
     <div class="overlayer">
       <div class="k-intro">
         <h1 data-aos="fade-left">{{ name }}</h1>
         <p data-aos="fade-left" class="text-muted">{{ position }}</p>
       </div>
-      <img :src="introLayer" class="svg8" alt="logo"  v-lazy-load/>
+      <img :src="introLayer" class="svg8" alt="Decoration" title="Decoration"  v-lazy-load/>
       <v-row align="end" class="k-social">
         <v-col v-for="(sn, i) of socialNetwork" class="timeline" cols="12" md="3" :key="i">
           <a :href="sn.link" rel="noopener noreferrer" target="_blank">

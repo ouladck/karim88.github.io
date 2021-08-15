@@ -1,34 +1,19 @@
 <template>
   <div ref="trigger">
     <Nuxt/>
+    <Footer tel="+2126-4162-3527" email="ouladchalha.k@gmail.com"
+            background-img="/images/sale.jpg"></Footer>
   </div>
 </template>
 
 <script>
+
+import Footer from "~/components/Footer/Footer";
 export default {
   loading: '~/components/LoadingBar/LoadingBar.vue',
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
+  components: { Footer },
+  mounted() {
+    console.log('lol')
   }
 }
 </script>

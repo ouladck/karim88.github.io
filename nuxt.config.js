@@ -11,8 +11,14 @@ export default {
       { hid: 'description', name: 'description', content: `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in \`Master Business Analytics and Big Data\` from FST Settat.` },
       { hid: 'robots', name: 'robots', content: 'follow, index' },
       { hid: 'og:title', name: 'og:title', content: 'KARIM OULAD CHALHA - Technical Project Manager' },
-      { hid: 'og:image', name: 'og:image', content: 'img/me.jpg' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'KARIM OULAD CHALHA - Technical Project Manager' },
+      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'KARIM OULAD CHALHA - Technical Project Manager' },
+      { hid: 'og:image:alt', name: 'og:image:alt', content: 'KARIM OULAD CHALHA - Technical Project Manager' },
+      { hid: 'og:image', name: 'og:image', content: 'images/karimslab.jpg' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'images/karimslab.jpg' },
       { hid: 'og:description', name: 'og:description', content: `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in \`Master Business Analytics and Big Data\` from FST Settat.` },
+      { hid: 'twitter:description', name: 'twitter:description', content: `I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in \`Master Business Analytics and Big Data\` from FST Settat.` },
+
       { hid: 'robots', name: 'robots', content: 'follow, index' },
       { hid: 'author', name: 'author', content: 'Karim Oulad Chalha <ouladchalha.k@gmail.com>' },
       { hid: 'keywords', name: 'keywords', content: 'fullstack, full-stack, odoo, web, developer, karim, oulad, chalha, oulad chalha, karim oulad chalha, maroc, rabat, fullstack developer, web developer, devextreme, python, typescript, angular, jquery, laravel, mongodb, morocco, linux, applications, nodejs, es6, coffeescript, backend, frontend, ssh, vuejs' },
@@ -45,6 +51,7 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -84,6 +91,10 @@ export default {
         }
       }
     }
+  },
+  optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

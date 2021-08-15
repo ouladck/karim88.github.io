@@ -44,6 +44,7 @@ export default {
   color: #F7F7F9;
   background-color: #1D1B1B;
   .container {
+    max-width: 1140px;
     h2 {
       font-family: 'Abril Fatface', cursive;
       padding-bottom: 40px;

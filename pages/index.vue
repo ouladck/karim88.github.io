@@ -2,29 +2,26 @@
   <div>
     <Intro name="Karim Oulad Chalha" position="Technical Project Manager" logo="/images/logo-128.png"
            background-img="/images/desktop.jpg" intro-layer="/images/intro-layer.svg" :social-network="socialNetwork"/>
-    <WhoAmI name="Karim oulad Chalha" background-img="/images/karim.png"
+    <WhoAmI name="Karim oulad Chalha" background-img="/images/karimslab.jpg"
             tel="+2126-4162-3527" email="ouladchalha.k@gmail.com"
             address="41 Rue Laymoune, Hay Cheikh Lamfadel, 11020 Salé"
             description="I'm an eager and experienced Technical Project Manager with a demonstrated history of working in the computer software industry. Skilled in Angular, Vuejs, Laravel and Python. Strong engineering professional and ardent about open source and the new IT with a Master focused in `Master Business Analytics and Big Data` from FST Settat."></WhoAmI>
     <Timeline :timeline="timeline"></Timeline>
     <Skill :skills="skills"></Skill>
     <Portfolio :projects="portfolio"></Portfolio>
-    <Footer tel="+2126-4162-3527" email="ouladchalha.k@gmail.com"
-            background-img="/images/sale.jpg"></Footer>
   </div>
 </template>
 
 <script>
 
 import Intro from "../components/Intro/Intro";
-import Footer from "../components/Footer/Footer";
 import WhoAmI from "../components/WhoAmI/WhoAmI";
 import Timeline from "../components/Timeline/Timeline";
 import Skill from "../components/Skill/Skill";
 import Portfolio from "../components/Portfolio/Portfolio";
 
 export default {
-  components: {Portfolio, Skill, Timeline, WhoAmI, Intro, Footer},
+  components: {Portfolio, Skill, Timeline, WhoAmI, Intro},
   loading: {
     color: 'blue',
     height: '5px'

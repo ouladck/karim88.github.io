@@ -8,7 +8,7 @@
              backgroundPosition: 'center'
         }">
           <div class="technologie-shape"/>
-          <div class="technologi">{{ project.technologie }}</div>
+          <div class="technologie">{{ project.technologie }}</div>
           <div class="layer">
             <a :href="project.link" :aria-label="`link to ${project.link}`" target="_blank" rel="noopener noreferrer">
               <v-icon class="link-icon" large>fas fa-link</v-icon>
