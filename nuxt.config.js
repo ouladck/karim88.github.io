@@ -60,7 +60,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'nuxt-lazy-load'
+    'nuxt-lazy-load',
+    '@nuxtjs/google-gtag',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -95,6 +96,14 @@ export default {
   optimizedImages: {
     optimizeImages: true,
     optimizeImagesInDev: true
+  },
+  'google-gtag': {
+    id: 'UA-23659575-5',
+    config: {
+      anonymize_ip: true, // anonymize IP
+      send_page_view: true, // might be necessary to avoid duplicated page track on page reload
+    },
+    debug: false, // enable to track in dev mode
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

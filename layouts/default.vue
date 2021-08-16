@@ -1,6 +1,7 @@
 <template>
   <div ref="trigger">
-    <Nuxt/>
+    <Nuxt />
+    <ScrollUp></ScrollUp>
     <Footer tel="+2126-4162-3527" email="ouladchalha.k@gmail.com"
             background-img="/images/sale.jpg"></Footer>
   </div>
@@ -9,11 +10,28 @@
 <script>
 
 import Footer from "~/components/Footer/Footer";
+import ScrollUp from "~/components/ScrollUp/ScrollUp";
 export default {
   loading: '~/components/LoadingBar/LoadingBar.vue',
-  components: { Footer },
+  components: {ScrollUp, Footer },
   mounted() {
-    console.log('lol')
+  },
+  created () {
+    if (!this.$isServer) {
+      // eslint-disable-next-line nuxt/no-globals-in-created
+      window.addEventListener('scroll', this.handleScroll);
+    }
+  },
+  destroyed () {
+    if (!this.$isServer) {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  },
+  methods: {
+    handleScroll () {
+      const scrollY = window.scrollY
+      this.$store.commit('scrollY', scrollY)
+    }
   }
 }
 </script>
