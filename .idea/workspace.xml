@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Intro/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Intro/Intro.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ScrollUp/ScrollUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScrollUp/ScrollUp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/aos.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/aos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +230,7 @@
       <workItem from="1628957747049" duration="13650000" />
       <workItem from="1629067512666" duration="7184000" />
       <workItem from="1629106950114" duration="48000" />
-      <workItem from="1629311277348" duration="442000" />
+      <workItem from="1629311277348" duration="1487000" />
     </task>
     <servers />
   </component>
