@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import goTo from 'vuetify/lib/services/goto'
-
 export default {
   name: "ScrollUp",
   computed: {

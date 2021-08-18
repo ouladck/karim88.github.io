@@ -3,14 +3,14 @@
     <img class="logo" :src="logo" alt="Logo" title="Logo" v-lazy-load />
     <div class="overlayer">
       <div class="k-intro">
-        <h1 data-aos="fade-left">{{ name }}</h1>
-        <p data-aos="fade-left" class="text-muted">{{ position }}</p>
+        <h1>{{ name }}</h1>
+        <p class="text-muted">{{ position }}</p>
       </div>
-      <img :src="introLayer" class="svg8" alt="Decoration" title="Decoration"  v-lazy-load/>
+      <img v-lazy-load :src="introLayer" class="svg8" alt="Decoration"  title="Decoration"/>
       <v-row align="end" class="k-social">
         <v-col v-for="(sn, i) of socialNetwork" class="timeline" cols="12" md="3" :key="i">
           <a :href="sn.link" rel="noopener noreferrer" target="_blank">
-            <v-icon data-aos="fade-left" dark :class="`${sn.className} icon-${i}`" large>{{ sn.icon }}</v-icon>
+            <v-icon dark :class="`${sn.className} icon-${i}`" large>{{ sn.icon }}</v-icon>
           </a>
         </v-col>
       </v-row>

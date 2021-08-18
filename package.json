@@ -23,6 +23,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "aos": "^2.3.4",
     "core-js": "^3.15.1",
+    "lozad": "^1.16.0",
     "nuxt": "^2.15.7",
     "nuxt-lazy-load": "^1.2.6",
     "v-tooltip": "^2.1.3",
