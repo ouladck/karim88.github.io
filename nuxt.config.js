@@ -22,11 +22,28 @@ export default {
       { hid: 'robots', name: 'robots', content: 'follow, index' },
       { hid: 'author', name: 'author', content: 'Karim Oulad Chalha <ouladchalha.k@gmail.com>' },
       { hid: 'keywords', name: 'keywords', content: 'fullstack, full-stack, odoo, web, developer, karim, oulad, chalha, oulad chalha, karim oulad chalha, maroc, rabat, fullstack developer, web developer, devextreme, python, typescript, angular, jquery, laravel, mongodb, morocco, linux, applications, nodejs, es6, coffeescript, backend, frontend, ssh, vuejs' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'msapplication-TileColor', content: '#FCE77D' },
+      { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
+      { name: 'theme-color', content: '#FCE77D' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Dancing+Script|Kanit&display=swap'},
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' },
+      { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' },
+      { rel: 'apple-touch-icon', sizes: '72x72', href: '/apple-icon-72x72.png' },
+      { rel: 'apple-touch-icon', sizes: '76x76', href: '/apple-icon-76x76.png' },
+      { rel: 'apple-touch-icon', sizes: '114x114', href: '/apple-icon-114x114.png' },
+      { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-icon-120x120.png' },
+      { rel: 'apple-touch-icon', sizes: '144x144', href: '/apple-icon-144x144.png' },
+      { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-icon-152x152.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-icon-180x180.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-icon-192x192.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/apple-icon-16x16.png' },
+      { rel: 'manifest', href: '/manifest.json' }
     ]
   },
 
