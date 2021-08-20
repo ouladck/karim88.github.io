@@ -75,4 +75,11 @@ export default {
     text-transform: uppercase;
   }
 }
+@media only screen and (max-width: 800px) {
+  .skills {
+    .col-md-4 {
+      text-align: center;
+    }
+  }
+}
 </style>

@@ -120,8 +120,8 @@ export default {
   .logo {
     position: absolute;
     z-index: 2;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -139,6 +139,42 @@ export default {
 
 .text-github:hover {
   color: #1D1B1B !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    .overlayer {
+      .k-intro {
+        padding-left: 47px;
+        top: 30%;
+        h1 {
+          font-size: 3em;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .svg8 {
+      width: 100%;
+    }
+
+    .k-social {
+      left: 0;
+      padding-bottom: 10px;
+    }
+
+    .k-social a {
+      padding-left: 10px;
+      color: #1D1B1B;
+    }
+
+    .fas, .fab {
+      padding-right: 0;
+      color: #1D1B1B !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -179,7 +215,6 @@ export default {
   }
 }
 
-
 @media only screen and (max-width: 360px) {
   .intro {
     .overlayer {
@@ -193,22 +228,22 @@ export default {
     .k-intro h1 {
       font-size: 3rem;
     }
-
     .svg8 {
       width: 100%;
     }
-
     .k-social {
       left: 0;
       padding-bottom: 10px;
-
       a {
         padding-left: 10px;
         color: #1D1B1B;
       }
+      .timeline {
+        padding-top: 0;
+      }
     }
     .fas, .fab {
-      font-size: 30px !important;
+      font-size: 25px !important;
       padding-right: 0;
       color: #1D1B1B !important;
     }
