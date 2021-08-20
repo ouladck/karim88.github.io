@@ -4,7 +4,11 @@
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="" />
+    <list default="true" id="e9d037e0-c06e-4ec1-80d6-62fc912cdedd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/midas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ScrollUp/ScrollUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScrollUp/ScrollUp.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +19,8 @@
       <list>
         <option value="Sass File" />
         <option value="CSS File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -230,7 +234,7 @@
       <workItem from="1629106950114" duration="48000" />
       <workItem from="1629311277348" duration="4588000" />
       <workItem from="1629366864644" duration="24000" />
-      <workItem from="1629423526097" duration="3182000" />
+      <workItem from="1629423526097" duration="8376000" />
     </task>
     <servers />
   </component>
