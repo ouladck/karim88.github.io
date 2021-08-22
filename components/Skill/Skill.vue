@@ -25,7 +25,11 @@ export default {
     },
     skills: {
       type: Array,
-      default: () => []
+      default: () => [{
+        name: 'IT',
+        icon: 'fas fa-home',
+        skills: [{name: 'Tech', advanced: false}]
+      }]
     }
   }
 }
@@ -73,6 +77,8 @@ export default {
   .badge-primary {
     background-color: #F96167 !important;
     text-transform: uppercase;
+    border-radius: 3px;
+    padding: 3px;
   }
 }
 @media only screen and (max-width: 800px) {

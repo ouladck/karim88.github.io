@@ -23,11 +23,11 @@ export default {
   props: {
     tel: {
       type: String,
-      default: ''
+      default: '+111-000-666-777'
     },
     email: {
       type: String,
-      default: ''
+      default: 'stewie@griffin.guy'
     },
     country: {
       type: String,
@@ -39,7 +39,7 @@ export default {
     },
     backgroundImg: {
       type: String,
-      default: ''
+      default: '/images/sale.jpg'
     },
   }
 }

@@ -44,7 +44,12 @@ export default {
     },
     projects: {
       type: Array,
-      default: () => []
+      default: () => [{
+        image: "/images/portfolio/zayousa.png",
+        link: 'https://zayousa.com',
+        technologie: 'WORDPRESS',
+        isVideo: false
+      }]
     }
   }
 }

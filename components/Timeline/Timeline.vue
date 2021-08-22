@@ -46,7 +46,21 @@ export default {
     },
     timeline: {
       type: Array,
-      default: () => []
+      default: () => [{
+        id: 11,
+        position: 'Technical Project Manager',
+        company: 'Gear9 - Groupe Thenext.Click',
+        description: `<span>Participating in the development of many projects including <a href="https://www.inwi.ma/"
+                                                                                            aria-label="inwi website">inwi website</a></span>`,
+        time: 'Aug 2020 - Current',
+        icon: 'fas fa-briefcase fa-2x',
+        companies: [
+          { image: `images/companies/inwi.svg`, alt: `inwi`, url: `https://inwi.ma` },
+          { image: `images/companies/pmi.png`, alt: `Philip Morris International` },
+          { image: `images/companies/sg.png`, alt: `Soglease & La Marocaine Vie` },
+          { image: `images/companies/aivam.svg`, alt: `AIVAM` },
+        ]
+      }]
     }
   }
 }

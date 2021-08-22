@@ -34,27 +34,27 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
+      default: 'Brain Griffin'
     },
     backgroundImg: {
       type: String,
-      default: ''
+      default: '/images/karimslab.jpg'
     },
     email: {
       type: String,
-      default: ''
+      default: 'brain@griffin.guy'
     },
     tel: {
       type: String,
-      default: ''
+      default: '+321-000-586'
     },
     address: {
       type: String,
-      default: ''
+      default: 'Some fake place in USA'
     },
     description: {
       type: String,
-      default: ''
+      default: 'Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu\'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.'
     }
   }
 }

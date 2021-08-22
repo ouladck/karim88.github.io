@@ -25,27 +25,31 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
+      default: 'Brain Griffin'
     },
     position: {
       type: String,
-      default: ''
+      default: 'Fake Writer'
     },
     logo: {
       type: String,
-      default: ''
+      default: '/images/logo-128.png'
     },
     backgroundImg: {
       type: String,
-      default: ''
+      default: '/images/desktop.jpg'
     },
     introLayer: {
       type: String,
-      default: ''
+      default: '/images/intro-layer.svg'
     },
     socialNetwork: {
       type: Array,
-      default: () => []
+      default: () => [{
+        link: 'https://github.com/karim88',
+        className: 'text-github',
+        icon: 'fab fa-github'
+      }]
     }
   }
 }
