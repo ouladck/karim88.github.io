@@ -12,8 +12,8 @@
 import Footer from "~/components/Footer/Footer";
 import ScrollUp from "~/components/ScrollUp/ScrollUp";
 export default {
-  loading: '~/components/LoadingBar/LoadingBar.vue',
   components: {ScrollUp, Footer },
+  loading: '~/components/LoadingBar/LoadingBar.vue',
   mounted() {
   },
   created () {

@@ -31,11 +31,24 @@ export default {
       timeline: [
         {
           id: 11,
+          position: 'Fullstack (Vuejs / PHP) Consultant',
+          company: 'SIDEXIA',
+          description: `<span></span>`,
+          time: 'Feb 2022 - Current',
+          icon: 'fas fa-briefcase fa-2x',
+          companies: [
+            { image: `images/companies/veolia.png`, alt: `Veolia`, url: `https://www.veoliawatertechnologies.com` },
+            { image: `images/companies/fluksaqua.png`, alt: `FluksAqua`, url: `https://www.fluksaqua.com/en/` },
+            { image: `images/companies/birdz.png`, alt: `birdz`, url: `https://www.birdz.com/` }
+          ]
+        },
+        {
+          id: 11,
           position: 'Technical Project Manager',
           company: 'Gear9 - Groupe Thenext.Click',
           description: `<span>Participating in the development of many projects including <a href="https://www.inwi.ma/"
                                                                                             aria-label="inwi website">inwi website</a></span>`,
-          time: 'Aug 2020 - Current',
+          time: 'Aug 2020 - Dec 2021',
           icon: 'fas fa-briefcase fa-2x',
           companies: [
             { image: `images/companies/inwi.svg`, alt: `inwi`, url: `https://inwi.ma` },
